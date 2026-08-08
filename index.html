@@ -267,23 +267,6 @@
 
   .section-pad { padding: clamp(72px, 11vw, 130px) 0; }
 
-  .diff {
-    background:
-      radial-gradient(90% 120% at 12% 0%, rgba(61,90,128,0.22) 0%, rgba(61,90,128,0) 55%),
-      var(--midnight);
-  }
-  .diff h2 {
-    font-size: clamp(1.9rem, 4.4vw, 3rem);
-    max-width: 15em;
-    margin-bottom: 22px;
-  }
-  .diff .body {
-    font-size: clamp(1.05rem, 2vw, 1.22rem);
-    color: var(--cream-dim);
-    max-width: 40em;
-  }
-  .diff .body strong { color: var(--cream); font-weight: 400; }
-
   /* Body / Soul / Spirit cards */
   .dims { background: var(--deep-night); }
   .dims .head {
@@ -334,28 +317,6 @@
   .card--body   { --accent: #E07A5F; }
   .card--soul   { --accent: #B24B99; } /* lightened plum for legibility as accent text */
   .card--spirit { --accent: #6E90C4; } /* lightened navy for legibility as accent text */
-
-  /* How it works */
-  .how { background: var(--midnight); }
-  .how .head { margin-bottom: clamp(40px, 6vw, 60px); }
-  .how h2 { font-size: clamp(1.9rem, 4.4vw, 3rem); }
-  .steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    counter-reset: step;
-  }
-  .step { position: relative; padding-top: 8px; }
-  .step .num {
-    font-family: var(--serif);
-    font-size: 3.2rem;
-    font-weight: 600;
-    color: var(--gold);
-    line-height: 1;
-    opacity: 0.9;
-  }
-  .step h3 { font-size: 1.5rem; margin: 10px 0 8px; }
-  .step p { color: var(--cream-dim); }
 
   /* Founding families / final CTA */
   .founding {
@@ -481,7 +442,6 @@
   ===================================================== */
   @media (max-width: 860px) {
     .cards { grid-template-columns: 1fr; gap: 16px; }
-    .steps { grid-template-columns: 1fr; gap: 34px; text-align: left; }
     .hero__scrim {
       background:
         linear-gradient(180deg, rgba(11,15,26,0.66) 0%, rgba(11,15,26,0.35) 40%, rgba(11,15,26,0.94) 100%);
@@ -529,14 +489,6 @@
   </div>
 </header>
 
-<!-- ============ PROBLEM → DIFFERENCE ============ -->
-<section class="diff section-pad">
-  <div class="wrap">
-    <h2 class="reveal">You've prayed the prayers that say "insert your child's name here."</h2>
-    <p class="body reveal">Prayer cards and graphics are everywhere — and they're generic. Over Their Lives is different: tell us your child's name once, and every prayer in the app becomes theirs. <strong>The same prayer you pray tonight carries your child's name, not a blank line.</strong></p>
-  </div>
-</section>
-
 <!-- ============ BODY · SOUL · SPIRIT ============ -->
 <section class="dims section-pad">
   <div class="wrap">
@@ -555,32 +507,6 @@
       <div class="card card--spirit reveal">
         <h3>Spirit</h3>
         <p>Faith, identity, purpose. Prayers that lead them to God.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HOW IT WORKS ============ -->
-<section class="how section-pad">
-  <div class="wrap">
-    <div class="head reveal">
-      <h2>How it works</h2>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="num">1</div>
-        <h3>Tell us about your child</h3>
-        <p>Name, age — that's all we need.</p>
-      </div>
-      <div class="step reveal">
-        <div class="num">2</div>
-        <h3>Choose today's prayer</h3>
-        <p>A growing catalog for every season and situation: first days of school, sickness, friendships, fear, milestones.</p>
-      </div>
-      <div class="step reveal">
-        <div class="num">3</div>
-        <h3>Pray, speak, declare</h3>
-        <p>Every prayer personalized with your child's name. Any time of day. Every day.</p>
       </div>
     </div>
   </div>
