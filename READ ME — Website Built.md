@@ -21,18 +21,13 @@ It works on phones, tablets, and computers, and it's fast. Your original photos 
 
 ---
 
-## The ONE thing left to wire up: where the emails go
+## Where the emails go ✅ (done)
 
-Right now, when someone signs up, the form shows the warm "You're in. See you Christmas morning. 🕊️" message — but **it isn't yet sending those emails anywhere.** You need to pick an email service, and then it's a one-line change.
+The sign-up forms are wired to **Formspree** (endpoint `https://formspree.io/f/xaewqpoo`). When someone signs up, the address is captured by Formspree and emailed to **hello@overtheirlives.com**, and you can download the full founding-families list as a spreadsheet from your Formspree dashboard anytime.
 
-**My recommendation (free and simplest): [Formspree](https://formspree.io)** — you sign up, it gives you a form web address, and every submission lands in your inbox. Later you can move to Kit/ConvertKit for fancier launch emails.
+**One-time activation:** the first time the form is used, Formspree emails you to confirm/activate the form — do one test sign-up on the live site, then click the confirmation link in that email. After that, all sign-ups flow automatically.
 
-**How to connect it** (or send me the address and I'll do it):
-1. Create a free form at your chosen service and copy its form address (a URL).
-2. In `index.html`, find the text **`FORM_ACTION_PLACEHOLDER`** (it appears twice) and replace both with that URL.
-3. Done — sign-ups now flow to you, and the page still shows the success message without reloading.
-
-Until you do this, the form still *looks* and *feels* complete for testing — it just won't capture real addresses yet.
+*Later, if you want to send fancier launch emails, you can export the Formspree list and import it into Kit/ConvertKit.*
 
 ---
 
