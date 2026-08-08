@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Over Their Lives — Prayers That Know Your Child by Name</title>
+<meta name="description" content="Over Their Lives helps you pray over your children consistently and intentionally — personalized prayers for their body, soul, and spirit. Launching Christmas Day 2026." />
+<meta name="theme-color" content="#0B0F1A" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Over Their Lives — Prayers That Know Your Child by Name" />
+<meta property="og:description" content="Personalized prayers for your children — body, soul, and spirit. Launching Christmas Day 2026. Become a founding family." />
+<meta property="og:image" content="assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://overtheirlives.com/" />
+<meta property="og:site_name" content="Over Their Lives" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Over Their Lives — Prayers That Know Your Child by Name" />
+<meta name="twitter:description" content="Personalized prayers for your children — body, soul, and spirit. Launching Christmas Day 2026." />
+<meta name="twitter:image" content="assets/og-image.jpg" />
+
+<!-- Favicons -->
+<link rel="icon" href="assets/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+<!-- Fonts: system fallback renders instantly; Google Fonts swap in -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --midnight:    #0B0F1A;
+    --deep-night:  #1C2A42;
+    --navy:        #3D5A80; /* Spirit */
+    --plum:        #7B2869; /* Soul */
+    --coral:       #E07A5F; /* Body */
+    --gold:        #E3A94F; /* accents / CTA */
+    --gold-soft:   #f0c884;
+    --cream:       #F6EFE2;
+    --cream-dim:   rgba(246, 239, 226, 0.72);
+    --cream-faint: rgba(246, 239, 226, 0.55);
+
+    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans:  "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+    --maxw: 1120px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--midnight);
+    color: var(--cream);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--serif);
+    font-weight: 600;
+    line-height: 1.12;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+
+  p { margin: 0; }
+
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 0.78rem;
+    color: var(--gold);
+  }
+
+  /* ---------- Reveal-on-scroll ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    will-change: opacity, transform;
+  }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* =====================================================
+     HERO
+  ===================================================== */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    /* documented fallback if hero.jpg is missing */
+    background:
+      radial-gradient(120% 90% at 50% 118%, rgba(227,169,79,0.34) 0%, rgba(227,169,79,0) 55%),
+      linear-gradient(180deg, #0B0F1A 0%, #1C2A42 100%);
+    background-size: cover;
+    background-position: center 42%;
+    overflow: hidden;
+  }
+  .hero__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+    z-index: 0;
+  }
+  .hero__scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(180deg, rgba(11,15,26,0.72) 0%, rgba(11,15,26,0.28) 34%, rgba(11,15,26,0.34) 62%, rgba(11,15,26,0.92) 100%),
+      linear-gradient(90deg, rgba(11,15,26,0.78) 0%, rgba(11,15,26,0.22) 46%, rgba(11,15,26,0) 74%);
+  }
+  /* soft gold glow that breathes gently up from the base */
+  .hero__glow {
+    position: absolute;
+    left: 50%; bottom: -18%;
+    width: 130%; height: 60%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: radial-gradient(50% 60% at 50% 100%, rgba(227,169,79,0.28) 0%, rgba(227,169,79,0) 70%);
+    pointer-events: none;
+    animation: breathe 7s ease-in-out infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.65; }
+    50%      { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero__glow { animation: none; }
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    padding: 96px 0;
+    max-width: 640px;
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 7vw, 4.6rem);
+    margin: 18px 0 20px;
+    text-shadow: 0 2px 26px rgba(11,15,26,0.55);
+  }
+  .hero .subline {
+    font-size: clamp(1.05rem, 2.2vw, 1.32rem);
+    color: var(--cream);
+    max-width: 34em;
+    margin-bottom: 34px;
+    text-shadow: 0 1px 14px rgba(11,15,26,0.6);
+  }
+
+  /* =====================================================
+     EMAIL FORM
+  ===================================================== */
+  .signup { max-width: 520px; }
+  .form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .form-row input[type="email"] {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 15px 18px;
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--cream);
+    background: rgba(11,15,26,0.55);
+    border: 1px solid rgba(246,239,226,0.28);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  .form-row input[type="email"]::placeholder { color: var(--cream-faint); }
+  .form-row input[type="email"]:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(227,169,79,0.25);
+  }
+
+  .btn {
+    flex: 0 0 auto;
+    padding: 15px 26px;
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--midnight);
+    background: linear-gradient(180deg, var(--gold-soft) 0%, var(--gold) 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(227,169,79,0.32);
+    transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    white-space: nowrap;
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 9px 26px rgba(227,169,79,0.42); filter: brightness(1.03); }
+  .btn:active { transform: translateY(0); }
+  .btn:disabled { opacity: 0.7; cursor: default; transform: none; }
+
+  .microcopy {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: var(--cream-dim);
+  }
+  .form-error {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--coral);
+    min-height: 1.1em;
+  }
+
+  .form-success {
+    display: none;
+    padding: 20px 22px;
+    background: rgba(61,90,128,0.22);
+    border: 1px solid rgba(227,169,79,0.5);
+    border-radius: 12px;
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    color: var(--cream);
+  }
+  .signup.done .form-panel { display: none; }
+  .signup.done .form-success { display: block; }
+
+  /* =====================================================
+     SECTIONS
+  ===================================================== */
+  section { position: relative; }
+
+  .section-pad { padding: clamp(72px, 11vw, 130px) 0; }
+
+  .diff {
+    background:
+      radial-gradient(90% 120% at 12% 0%, rgba(61,90,128,0.22) 0%, rgba(61,90,128,0) 55%),
+      var(--midnight);
+  }
+  .diff h2 {
+    font-size: clamp(1.9rem, 4.4vw, 3rem);
+    max-width: 15em;
+    margin-bottom: 22px;
+  }
+  .diff .body {
+    font-size: clamp(1.05rem, 2vw, 1.22rem);
+    color: var(--cream-dim);
+    max-width: 40em;
+  }
+  .diff .body strong { color: var(--cream); font-weight: 400; }
+
+  /* Body / Soul / Spirit cards */
+  .dims { background: var(--deep-night); }
+  .dims .head {
+    text-align: center;
+    margin-bottom: clamp(40px, 6vw, 64px);
+  }
+  .dims h2 { font-size: clamp(1.9rem, 4.4vw, 3rem); }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .card {
+    position: relative;
+    padding: 34px 28px 32px;
+    background: rgba(11,15,26,0.5);
+    border: 1px solid rgba(246,239,226,0.10);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+  .card:hover { transform: translateY(-4px); border-color: rgba(246,239,226,0.2); }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 4px;
+    background: var(--accent);
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    top: -40%; right: -30%;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+    opacity: 0.16;
+    pointer-events: none;
+  }
+  .card h3 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+    color: var(--accent);
+  }
+  .card p { color: var(--cream-dim); font-size: 1.02rem; }
+
+  .card--body   { --accent: #E07A5F; }
+  .card--soul   { --accent: #B24B99; } /* lightened plum for legibility as accent text */
+  .card--spirit { --accent: #6E90C4; } /* lightened navy for legibility as accent text */
+
+  /* How it works */
+  .how { background: var(--midnight); }
+  .how .head { margin-bottom: clamp(40px, 6vw, 60px); }
+  .how h2 { font-size: clamp(1.9rem, 4.4vw, 3rem); }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    counter-reset: step;
+  }
+  .step { position: relative; padding-top: 8px; }
+  .step .num {
+    font-family: var(--serif);
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+    opacity: 0.9;
+  }
+  .step h3 { font-size: 1.5rem; margin: 10px 0 8px; }
+  .step p { color: var(--cream-dim); }
+
+  /* Founding families / final CTA */
+  .founding {
+    position: relative;
+    text-align: center;
+    background:
+      radial-gradient(80% 120% at 50% 120%, rgba(227,169,79,0.22) 0%, rgba(227,169,79,0) 60%),
+      linear-gradient(180deg, var(--deep-night) 0%, var(--midnight) 100%);
+  }
+  .founding h2 { font-size: clamp(2.1rem, 5vw, 3.4rem); margin-bottom: 20px; }
+  .founding .body {
+    font-size: clamp(1.05rem, 2vw, 1.22rem);
+    color: var(--cream-dim);
+    max-width: 34em;
+    margin: 0 auto 30px;
+  }
+  .founding .signup { margin: 0 auto; }
+  .founding .form-success { text-align: center; }
+
+  /* Countdown */
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: clamp(14px, 4vw, 34px);
+    margin: 0 auto 40px;
+    flex-wrap: wrap;
+  }
+  .cd-unit { min-width: 62px; }
+  .cd-num {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 600;
+    color: var(--cream);
+    line-height: 1;
+  }
+  .cd-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    margin-top: 8px;
+  }
+
+  /* =====================================================
+     FOOTER
+  ===================================================== */
+  footer {
+    background: var(--midnight);
+    border-top: 1px solid rgba(246,239,226,0.08);
+    padding: 56px 0 44px;
+    text-align: center;
+  }
+  .footer-mark {
+    width: 68px; height: 68px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 18px 0 24px;
+  }
+  .socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(246,239,226,0.2);
+    color: var(--cream);
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+  .socials a:hover { border-color: var(--gold); background: rgba(227,169,79,0.12); transform: translateY(-2px); text-decoration: none; }
+  .socials svg { width: 20px; height: 20px; fill: currentColor; }
+  .foot-line {
+    font-size: 0.85rem;
+    color: var(--cream-faint);
+    letter-spacing: 0.04em;
+  }
+  .foot-privacy { margin-top: 10px; font-size: 0.85rem; }
+  .foot-privacy button {
+    background: none; border: none; padding: 0;
+    font-family: var(--sans); font-size: 0.85rem;
+    color: var(--gold); cursor: pointer; text-decoration: underline;
+  }
+
+  /* Privacy modal */
+  .modal {
+    display: none;
+    position: fixed; inset: 0;
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(11,15,26,0.8);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  .modal.open { display: flex; }
+  .modal__box {
+    max-width: 520px;
+    background: var(--deep-night);
+    border: 1px solid rgba(227,169,79,0.4);
+    border-radius: 16px;
+    padding: 34px 32px 30px;
+    text-align: left;
+  }
+  .modal__box h3 { font-size: 1.8rem; margin-bottom: 14px; }
+  .modal__box p { color: var(--cream-dim); font-size: 1rem; }
+  .modal__close {
+    margin-top: 22px;
+    padding: 11px 22px;
+    font-family: var(--sans); font-size: 0.95rem; font-weight: 500;
+    color: var(--midnight);
+    background: var(--gold);
+    border: none; border-radius: 9px; cursor: pointer;
+  }
+
+  /* =====================================================
+     RESPONSIVE
+  ===================================================== */
+  @media (max-width: 860px) {
+    .cards { grid-template-columns: 1fr; gap: 16px; }
+    .steps { grid-template-columns: 1fr; gap: 34px; text-align: left; }
+    .hero__scrim {
+      background:
+        linear-gradient(180deg, rgba(11,15,26,0.66) 0%, rgba(11,15,26,0.35) 40%, rgba(11,15,26,0.94) 100%);
+    }
+    .hero__content { padding: 88px 0 72px; }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 0 20px; }
+    .btn { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero" id="top">
+  <img class="hero__img" src="assets/hero.jpg"
+       alt="A glowing tent standing in an open field at golden hour, a parent leading a child by the hand into the warm light inside — the covering over a family."
+       fetchpriority="high" />
+  <div class="hero__scrim"></div>
+  <div class="hero__glow"></div>
+
+  <div class="wrap">
+    <div class="hero__content">
+      <span class="eyebrow">Pray&nbsp;|&nbsp;Speak&nbsp;|&nbsp;Declare</span>
+      <h1>Prayers that know your child by name.</h1>
+      <p class="subline">Over Their Lives helps you pray over your children consistently and intentionally — personalized prayers for their body, soul, and spirit. Launching Christmas Day 2026.</p>
+
+      <!-- SIGNUP (hero) -->
+      <form class="signup" data-signup novalidate
+            action="FORM_ACTION_PLACEHOLDER" method="POST">
+        <div class="form-panel">
+          <div class="form-row">
+            <label class="sr-only" for="email-hero" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Your email address</label>
+            <input id="email-hero" type="email" name="email" required
+                   autocomplete="email" placeholder="you@email.com" />
+            <button class="btn" type="submit">Become a Founding Family</button>
+          </div>
+          <p class="form-error" data-error aria-live="polite"></p>
+          <p class="microcopy">Free to join. First prayers arrive Christmas morning.</p>
+        </div>
+        <div class="form-success" role="status">You're in. See you Christmas morning. 🕊️</div>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROBLEM → DIFFERENCE ============ -->
+<section class="diff section-pad">
+  <div class="wrap">
+    <h2 class="reveal">You've prayed the prayers that say "insert your child's name here."</h2>
+    <p class="body reveal">Prayer cards and graphics are everywhere — and they're generic. Over Their Lives is different: tell us your child's name once, and every prayer in the app becomes theirs. <strong>The same prayer you pray tonight carries your child's name, not a blank line.</strong></p>
+  </div>
+</section>
+
+<!-- ============ BODY · SOUL · SPIRIT ============ -->
+<section class="dims section-pad">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Cover all of them. All of it.</h2>
+    </div>
+    <div class="cards">
+      <div class="card card--body reveal">
+        <h3>Body</h3>
+        <p>Health, protection, sleep, growth. Prayers for the child you can hold.</p>
+      </div>
+      <div class="card card--soul reveal">
+        <h3>Soul</h3>
+        <p>Mind, emotions, friendships, courage. Prayers for who they're becoming.</p>
+      </div>
+      <div class="card card--spirit reveal">
+        <h3>Spirit</h3>
+        <p>Faith, identity, purpose. Prayers that lead them to God.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how section-pad">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>How it works</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">1</div>
+        <h3>Tell us about your child</h3>
+        <p>Name, age — that's all we need.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">2</div>
+        <h3>Choose today's prayer</h3>
+        <p>A growing catalog for every season and situation: first days of school, sickness, friendships, fear, milestones.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">3</div>
+        <h3>Pray, speak, declare</h3>
+        <p>Every prayer personalized with your child's name. Any time of day. Every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDING FAMILIES (final ask) ============ -->
+<section class="founding section-pad" id="join">
+  <div class="wrap">
+    <h2 class="reveal">Be there Christmas morning.</h2>
+
+    <!-- Gentle countdown to Dec 25, 2026 -->
+    <div class="countdown reveal" data-countdown aria-label="Time until launch on December 25, 2026">
+      <div class="cd-unit"><div class="cd-num" data-days>—</div><div class="cd-label">Days</div></div>
+      <div class="cd-unit"><div class="cd-num" data-hours>—</div><div class="cd-label">Hours</div></div>
+      <div class="cd-unit"><div class="cd-num" data-mins>—</div><div class="cd-label">Minutes</div></div>
+      <div class="cd-unit"><div class="cd-num" data-secs>—</div><div class="cd-label">Seconds</div></div>
+    </div>
+
+    <p class="body reveal">The app arrives December 25, 2026 — our gift to your family. Founding families get early access on Christmas Eve, a founding-family badge in the app, and launch-week perks. It costs nothing to join the list.</p>
+
+    <!-- SIGNUP (repeat) -->
+    <form class="signup reveal" data-signup novalidate
+          action="FORM_ACTION_PLACEHOLDER" method="POST">
+      <div class="form-panel">
+        <div class="form-row">
+          <label for="email-join" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Your email address</label>
+          <input id="email-join" type="email" name="email" required
+                 autocomplete="email" placeholder="you@email.com" />
+          <button class="btn" type="submit">Become a Founding Family</button>
+        </div>
+        <p class="form-error" data-error aria-live="polite"></p>
+        <p class="microcopy">Free to join. First prayers arrive Christmas morning.</p>
+      </div>
+      <div class="form-success" role="status">You're in. See you Christmas morning. 🕊️</div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <img class="footer-mark" src="assets/mark-256.png" alt="Over Their Lives mark" />
+    <div class="socials">
+      <!-- [NANA DECIDES: exact profile URLs] -->
+      <a href="https://facebook.com/" aria-label="Over Their Lives on Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="https://instagram.com/" aria-label="Over Their Lives on Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.8c-3.15 0-3.52.01-4.76.07-.98.04-1.5.21-1.86.35-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.14.36-.31.88-.35 1.86-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.98.21 1.5.35 1.86.18.47.4.8.75 1.15.35.35.68.57 1.15.75.36.14.88.31 1.86.35 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.98-.04 1.5-.21 1.86-.35.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.14-.36.31-.88.35-1.86.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.98-.21-1.5-.35-1.86a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.36-.14-.88-.31-1.86-.35-1.24-.06-1.61-.07-4.76-.07zm0 3.06a4.98 4.98 0 1 1 0 9.96 4.98 4.98 0 0 1 0-9.96zm0 8.21a3.23 3.23 0 1 0 0-6.46 3.23 3.23 0 0 0 0 6.46zm6.34-8.41a1.16 1.16 0 1 1-2.32 0 1.16 1.16 0 0 1 2.32 0z"/></svg>
+      </a>
+      <a href="https://tiktok.com/" aria-label="Over Their Lives on TikTok" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.1v12.4a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 1 1 .75-4.92V9.83a5.62 5.62 0 0 0-.75-.05 5.62 5.62 0 1 0 5.62 5.62V9.01a7.34 7.34 0 0 0 4.29 1.37V7.28a4.28 4.28 0 0 1-3.23-1.46z"/></svg>
+      </a>
+    </div>
+    <p class="foot-line">Over Their Lives · BLV Enterprises LLC · © 2026</p>
+    <p class="foot-privacy"><button type="button" data-open-privacy>Privacy</button></p>
+  </div>
+</footer>
+
+<!-- Privacy modal -->
+<div class="modal" data-privacy role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+  <div class="modal__box">
+    <h3 id="privacy-title">Your privacy</h3>
+    <p>We collect your email address for one reason: to send you launch updates about Over Their Lives. We will never sell or share it, and you can unsubscribe any time. We do not collect your children's names on this website — that happens only inside the app, on your device.</p>
+    <button class="modal__close" type="button" data-close-privacy>Got it</button>
+  </div>
+</div>
+
+<script>
+  /* ---------- Reveal on scroll ---------- */
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.14 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+
+  /* ---------- Email capture ----------
+     Validates client-side and shows the warm success state.
+     Wiring a provider is a one-line change: set FORM_ACTION_PLACEHOLDER
+     to your form endpoint (Kit / Formspree / Mailchimp). If the action is
+     a real URL, the form POSTs to it (fetch) and still shows the success
+     state without leaving the page. Until then it "succeeds" locally so
+     the experience is testable.
+  */
+  (function () {
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    document.querySelectorAll('[data-signup]').forEach(function (form) {
+      var input = form.querySelector('input[type="email"]');
+      var errEl = form.querySelector('[data-error]');
+      var btn   = form.querySelector('button[type="submit"]');
+
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        errEl.textContent = '';
+        var email = (input.value || '').trim();
+
+        if (!EMAIL_RE.test(email)) {
+          errEl.textContent = 'Please enter a valid email address.';
+          input.focus();
+          return;
+        }
+
+        var action = form.getAttribute('action');
+        var wired = action && action.indexOf('FORM_ACTION_PLACEHOLDER') === -1;
+
+        var succeed = function () { form.classList.add('done'); };
+
+        if (!wired) {
+          // Provider not chosen yet — succeed locally so the flow is testable.
+          succeed();
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Joining…';
+        var data = new FormData(form);
+        fetch(action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+          .then(function (r) {
+            if (r.ok) { succeed(); }
+            else { throw new Error('bad response'); }
+          })
+          .catch(function () {
+            btn.disabled = false;
+            btn.textContent = 'Become a Founding Family';
+            errEl.textContent = 'Something went wrong. Please try again.';
+          });
+      });
+    });
+  })();
+
+  /* ---------- Countdown to Christmas Day 2026 ---------- */
+  (function () {
+    var box = document.querySelector('[data-countdown]');
+    if (!box) return;
+    // Launch: Dec 25, 2026, 00:00 local time.
+    var target = new Date(2026, 11, 25, 0, 0, 0).getTime();
+    var elD = box.querySelector('[data-days]');
+    var elH = box.querySelector('[data-hours]');
+    var elM = box.querySelector('[data-mins]');
+    var elS = box.querySelector('[data-secs]');
+
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+    function tick() {
+      var diff = target - Date.now();
+      if (diff <= 0) {
+        elD.textContent = elH.textContent = elM.textContent = elS.textContent = '00';
+        box.setAttribute('aria-label', 'Over Their Lives has launched.');
+        return;
+      }
+      var s = Math.floor(diff / 1000);
+      elD.textContent = Math.floor(s / 86400);
+      elH.textContent = pad(Math.floor((s % 86400) / 3600));
+      elM.textContent = pad(Math.floor((s % 3600) / 60));
+      elS.textContent = pad(s % 60);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  /* ---------- Privacy modal ---------- */
+  (function () {
+    var modal = document.querySelector('[data-privacy]');
+    if (!modal) return;
+    function open() { modal.classList.add('open'); }
+    function close() { modal.classList.remove('open'); }
+    document.querySelectorAll('[data-open-privacy]').forEach(function (b) {
+      b.addEventListener('click', open);
+    });
+    modal.querySelector('[data-close-privacy]').addEventListener('click', close);
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  })();
+</script>
+</body>
+</html>
