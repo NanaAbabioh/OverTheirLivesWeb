@@ -55,25 +55,39 @@
   .topbar {
     border-bottom: 1px solid var(--rule);
     background: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 20;
   }
   .topbar .wrap {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
-  .topbar img { width: 40px; height: 40px; border-radius: 9px; }
+  .topbar .brand-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .topbar img { width: 38px; height: 38px; border-radius: 9px; }
   .topbar .brand {
     font-family: var(--serif);
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--navy);
-    text-decoration: none;
   }
-  .topbar .back {
-    margin-left: auto;
-    font-size: 0.92rem;
+  .topbar .nav-links { margin-left: auto; display: flex; gap: 22px; }
+  .topbar .nav-links a {
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--link);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .topbar .nav-links a:hover { color: var(--plum); text-decoration: underline; }
+  @media (max-width: 480px) {
+    .topbar .brand { display: none; }
+    .topbar .nav-links { gap: 16px; }
+    .topbar .nav-links a { font-size: 0.9rem; }
   }
 
   /* ---------- Document head ---------- */
@@ -141,7 +155,7 @@
     line-height: 1.15;
     margin: 48px 0 14px;
     padding-top: 8px;
-    scroll-margin-top: 20px;
+    scroll-margin-top: 80px;
   }
   h3.sub {
     font-family: var(--serif);
@@ -149,7 +163,7 @@
     font-size: 1.4rem;
     color: var(--ink);
     margin: 28px 0 8px;
-    scroll-margin-top: 20px;
+    scroll-margin-top: 80px;
   }
 
   p { margin: 0 0 16px; }
@@ -221,9 +235,12 @@
 
 <div class="topbar">
   <div class="wrap">
-    <img src="/assets/mark-256.png" alt="" />
-    <a class="brand" href="/">Over Their Lives</a>
-    <a class="back" href="/">&larr; Back to site</a>
+    <a class="brand-link" href="/"><img src="/assets/mark-256.png" alt="" /><span class="brand">Over Their Lives</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/about">About</a>
+      <a href="/how-it-works">How it works</a>
+      <a href="/faq">FAQ</a>
+    </nav>
   </div>
 </div>
 
