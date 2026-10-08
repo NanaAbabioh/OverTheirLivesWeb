@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://overtheirlives.com/sitemap.xml
