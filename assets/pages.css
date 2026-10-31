@@ -141,7 +141,20 @@ p { margin: 0 0 16px; color: var(--cream-dim); }
 strong { font-weight: 500; color: var(--cream); }
 
 ul { margin: 0 0 16px; padding-left: 1.25em; color: var(--cream-dim); }
+ol { margin: 0 0 16px; padding-left: 1.4em; color: var(--cream-dim); }
 li { margin: 7px 0; }
+
+.callout {
+  background: rgba(28,42,66,0.42);
+  border: 1px solid rgba(246,239,226,0.12);
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 18px 0 24px;
+}
+.callout p { margin: 0 0 6px; color: var(--cream); }
+.callout p:last-child { margin: 0; }
+.small { font-size: 0.9rem; color: var(--cream-faint); }
 
 hr.rule { border: none; border-top: 1px solid rgba(246,239,226,0.12); margin: 40px 0; }
 
