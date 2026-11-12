@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.blventerprises.overtheirlives",
+      "sha256_cert_fingerprints": [
+        "52:75:24:D1:D0:83:F7:48:AF:10:38:9C:86:63:DD:68:F4:48:2E:25:6A:FB:1E:93:A1:42:AF:9A:FD:65:28:84"
+      ]
+    }
+  }
+]

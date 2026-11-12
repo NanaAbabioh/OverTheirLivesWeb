@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["FT2GH2FBAS.com.blventerprises.overtheirlives"],
+        "components": [{ "/": "/join/*", "comment": "Circle invitations" }]
+      }
+    ]
+  }
+}
