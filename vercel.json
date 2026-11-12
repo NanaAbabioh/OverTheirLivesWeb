@@ -3,7 +3,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/join/:token*", "destination": "/join" }
+    { "source": "/join/:token*", "destination": "/join" },
+    { "source": "/.well-known/apple-app-site-association", "destination": "/.well-known/apple-app-site-association.json" }
   ],
   "headers": [
     {
