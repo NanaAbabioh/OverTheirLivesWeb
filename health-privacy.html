@@ -8,14 +8,14 @@
 <title>Consumer Health Data Privacy Policy — Over Their Lives</title>
 <link rel="canonical" href="https://overtheirlives.com/health-privacy" />
 <meta name="description" content="Consumer Health Data Privacy Policy for Over Their Lives, for residents of Washington State and Nevada. Published by BLV Enterprises LLC." />
-<meta name="theme-color" content="#0B0F1A" />
+<meta name="theme-color" content="#FAF7F0" />
 
 <link rel="icon" href="/assets/favicon.png" type="image/png" />
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/legal.css" />
 </head>
 <body>
@@ -32,27 +32,33 @@
 </div>
 
 <main class="wrap">
+ <div class="doc-grid">
 
   <div class="doc-head">
     <h1>Consumer Health Data Privacy Policy</h1>
     <p class="app">Over Their Lives</p>
-    <p class="updated"><span>Last updated: 23 November 2026</span><span class="read-time"><svg class="clock" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>5 min read</span></p>
+    <p class="updated"><span><svg class="clock" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>5 min read</span><span><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>Updated 23 November 2026</span><button class="copy-page" type="button" hidden><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>Copy page</button></p>
     <p class="intro">This policy is for residents of Washington State and Nevada, and for anyone whose health information we handle in those states. It is required by Washington's My Health My Data Act and Nevada's consumer health data law, and it adds to our <a href="/privacy">Privacy Policy</a>. We apply the same protections to everyone, wherever they live.</p>
     <p class="intro">Over Their Lives is a prayer app, not a health app. It does not diagnose, treat or track any condition. But some of its prayers are about health and wellbeing, and a record of which of those a parent prayed for a named child could say something about that child's health. This policy covers that record.</p>
   </div>
 
-  <nav class="toc" aria-label="Table of contents">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#the-health-data-we-collect">1. The health data we collect</a></li>
-      <li><a href="#where-it-comes-from">2. Where it comes from</a></li>
-      <li><a href="#why-we-collect-it-and-how-we-use-it">3. Why we collect it and how we use it</a></li>
-      <li><a href="#who-we-share-it-with">4. Who we share it with</a></li>
-      <li><a href="#your-rights-and-how-to-use-them">5. Your rights and how to use them</a></li>
-      <li><a href="#changes">6. Changes</a></li>
-      <li><a href="#contact">7. Contact</a></li>
-    </ol>
+  <nav class="toc" aria-label="On this page">
+    <details open id="toc">
+      <summary>On this page</summary>
+      <ol>
+        <li><a href="#the-health-data-we-collect">1. The health data we collect</a></li>
+        <li><a href="#where-it-comes-from">2. Where it comes from</a></li>
+        <li><a href="#why-we-collect-it-and-how-we-use-it">3. Why we collect it and how we use it</a></li>
+        <li><a href="#who-we-share-it-with">4. Who we share it with</a></li>
+        <li><a href="#your-rights-and-how-to-use-them">5. Your rights and how to use them</a></li>
+        <li><a href="#changes">6. Changes</a></li>
+        <li><a href="#contact">7. Contact</a></li>
+      </ol>
+    </details>
+    <script>if (window.matchMedia && matchMedia('(max-width: 900px)').matches) document.getElementById('toc').open = false;</script>
   </nav>
+
+  <div class="doc-body">
 
   <h2 class="sec" id="the-health-data-we-collect">1. The health data we collect</h2>
   <p>We collect consumer health data in only two ways.</p>
@@ -114,7 +120,9 @@
   <h2 class="sec" id="contact">7. Contact</h2>
   <p><strong><a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a></strong></p>
   <p>BLV Enterprises LLC, 971 US Highway 202N, STE N, Branchburg, New Jersey, 08876, United States</p>
+  </div>
 
+ </div>
 </main>
 
 <footer>
@@ -126,6 +134,34 @@
     <p class="copy">&copy; 2026 BLV Enterprises LLC</p>
   </div>
 </footer>
+
+<script>
+/* Optional extras. The page reads the same without them. */
+(function () {
+  var links = [].slice.call(document.querySelectorAll('nav.toc a'));
+  var heads = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+  function mark() {
+    var on = 0;
+    for (var i = 0; i < heads.length; i++) { if (heads[i].getBoundingClientRect().top <= 120) on = i; }
+    links.forEach(function (a, i) { a.classList.toggle('on', i === on); });
+  }
+  window.addEventListener('scroll', mark, { passive: true });
+  mark();
+
+  var btn = document.querySelector('.copy-page');
+  if (btn && navigator.clipboard) {
+    btn.hidden = false;
+    var label = btn.lastChild;
+    btn.addEventListener('click', function () {
+      var text = document.querySelector('.doc-head').innerText + '\n\n' + document.querySelector('.doc-body').innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        label.textContent = 'Copied';
+        setTimeout(function () { label.textContent = 'Copy page'; }, 2000);
+      });
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
