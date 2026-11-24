@@ -7,7 +7,7 @@
 
 <title>Privacy Policy — Over Their Lives</title>
 <link rel="canonical" href="https://overtheirlives.com/privacy" />
-<meta name="description" content="Privacy Policy for the Over Their Lives Prayer mobile application, published by BLV Enterprises LLC." />
+<meta name="description" content="Privacy Policy for the Over Their Lives app and website, published by BLV Enterprises LLC." />
 <meta name="theme-color" content="#0B0F1A" />
 
 <link rel="icon" href="/assets/favicon.png" type="image/png" />
@@ -16,221 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-
-<style>
-  :root {
-    --cream:    #F6EFE2;  /* page background */
-    --paper:    #FBF7EF;  /* slightly lighter card */
-    --ink:      #16213B;  /* body text */
-    --ink-soft: #46506A;  /* muted text */
-    --navy:     #3D5A80;  /* headings */
-    --link:     #2B4668;  /* links (AA on cream) */
-    --plum:     #7B2869;
-    --gold:     #E3A94F;
-    --rule:     rgba(22,33,59,0.14);
-    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-    --sans:  "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  }
-
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    margin: 0;
-    background: var(--cream);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
-  a:hover { color: var(--plum); }
-
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 22px; }
-
-  /* ---------- Top bar ---------- */
-  .topbar {
-    border-bottom: 1px solid var(--rule);
-    background: var(--cream);
-    position: sticky;
-    top: 0;
-    z-index: 20;
-  }
-  .topbar .wrap {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-  .topbar .brand-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .topbar img { width: 38px; height: 38px; border-radius: 9px; }
-  .topbar .brand {
-    font-family: var(--serif);
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--navy);
-  }
-  .topbar .nav-links { margin-left: auto; display: flex; gap: 22px; }
-  .topbar .nav-links a {
-    font-family: var(--sans);
-    font-weight: 400;
-    font-size: 0.95rem;
-    color: var(--link);
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  .topbar .nav-links a:hover { color: var(--plum); text-decoration: underline; }
-  @media (max-width: 480px) {
-    .topbar .brand { display: none; }
-    .topbar .nav-links { gap: 16px; }
-    .topbar .nav-links a { font-size: 0.9rem; }
-  }
-
-  /* ---------- Document head ---------- */
-  .doc-head { padding: 48px 0 8px; }
-  .doc-head h1 {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: clamp(2.3rem, 6vw, 3.2rem);
-    line-height: 1.1;
-    margin: 0 0 6px;
-    color: var(--ink);
-  }
-  .doc-head .app {
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: var(--navy);
-    margin: 0;
-  }
-  .doc-head .updated {
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-    margin: 4px 0 0;
-  }
-  .intro {
-    font-size: 1.08rem;
-    color: var(--ink);
-    margin: 22px 0 0;
-  }
-
-  hr.rule { border: none; border-top: 1px solid var(--rule); margin: 36px 0; }
-
-  /* ---------- Table of contents ---------- */
-  nav.toc {
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    border-radius: 12px;
-    padding: 22px 26px;
-    margin: 32px 0;
-  }
-  nav.toc h2 {
-    font-family: var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--ink-soft);
-    margin: 0 0 12px;
-  }
-  nav.toc ol {
-    margin: 0;
-    padding-left: 1.3em;
-    columns: 2;
-    column-gap: 32px;
-  }
-  nav.toc li { margin: 4px 0; break-inside: avoid; }
-  nav.toc a { color: var(--link); text-decoration: none; }
-  nav.toc a:hover { text-decoration: underline; }
-
-  /* ---------- Headings ---------- */
-  h2.sec {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: clamp(1.7rem, 4vw, 2.15rem);
-    color: var(--navy);
-    line-height: 1.15;
-    margin: 48px 0 14px;
-    padding-top: 8px;
-    scroll-margin-top: 80px;
-  }
-  h3.sub {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: var(--ink);
-    margin: 28px 0 8px;
-    scroll-margin-top: 80px;
-  }
-
-  p { margin: 0 0 16px; }
-  strong { font-weight: 500; color: var(--ink); }
-
-  ul { margin: 0 0 16px; padding-left: 1.3em; }
-  li { margin: 7px 0; }
-
-  .contact-block p { margin: 2px 0; }
-
-  /* ---------- In short box ---------- */
-  .in-short {
-    background: #FBEACB;
-    border: 1px solid rgba(227,169,79,0.55);
-    border-left: 5px solid var(--gold);
-    border-radius: 12px;
-    padding: 22px 26px 10px;
-    margin: 8px 0 8px;
-  }
-  .in-short ul { margin-bottom: 14px; }
-  .in-short .note {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: var(--ink-soft);
-    margin: 0 0 14px;
-  }
-
-  /* ---------- Tables ---------- */
-  .table-wrap { overflow-x: auto; margin: 0 0 18px; -webkit-overflow-scrolling: touch; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.98rem;
-    min-width: 440px;
-  }
-  caption { text-align: left; }
-  th, td {
-    text-align: left;
-    vertical-align: top;
-    padding: 11px 14px;
-    border: 1px solid var(--rule);
-  }
-  thead th {
-    background: var(--paper);
-    font-weight: 500;
-    color: var(--navy);
-  }
-  tbody tr:nth-child(even) td { background: rgba(251,247,239,0.7); }
-
-  /* ---------- Footer ---------- */
-  footer {
-    border-top: 1px solid var(--rule);
-    margin-top: 56px;
-    padding: 34px 0 48px;
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-    line-height: 1.7;
-  }
-  footer strong { color: var(--ink); font-weight: 500; }
-  footer a { color: var(--link); }
-  footer .copy { margin-top: 10px; font-size: 0.82rem; }
-
-  @media (max-width: 560px) {
-    nav.toc ol { columns: 1; }
-  }
-</style>
+<link rel="stylesheet" href="/assets/legal.css" />
 </head>
 <body>
 
@@ -249,198 +35,332 @@
 
   <div class="doc-head">
     <h1>Privacy Policy</h1>
-    <p class="app">Over Their Lives Prayer Mobile Application</p>
-    <p class="updated">Last updated: 3 November 2026</p>
-    <p class="intro">The Over Their Lives Prayer app helps a parent pray over their children intentionally, consistently, and holistically. This policy explains what the app collects, why, who else can see it, and how to get it back or get rid of it.</p>
+    <p class="app">Over Their Lives</p>
+    <p class="updated"><span>Last updated: 23 November 2026</span><span class="read-time"><svg class="clock" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>21 min read</span></p>
+    <p class="intro">Over Their Lives helps you pray intentionally and consistently over your children, their whole being: body, soul and spirit. It is for parents and other adults who pray for children in their care, such as grandparents, godparents and guardians. This policy explains what we collect, why, who else can see it, and how to get a copy of it or delete it.</p>
   </div>
 
   <nav class="toc" aria-label="Table of contents">
     <h2>Contents</h2>
     <ol>
-      <li><a href="#in-short">In short</a></li>
-      <li><a href="#who-we-are">Who we are</a></li>
-      <li><a href="#what-we-collect">What we collect</a></li>
-      <li><a href="#what-we-do-not-collect">What we do not collect</a></li>
-      <li><a href="#artificial-intelligence">Artificial intelligence</a></li>
-      <li><a href="#why-we-use-it">Why we use it</a></li>
-      <li><a href="#who-else-can-see-it">Who else can see it</a></li>
-      <li><a href="#childrens-information">Children's information</a></li>
-      <li><a href="#how-long-we-keep-it">How long we keep it</a></li>
-      <li><a href="#deleting-your-account">Deleting your account</a></li>
-      <li><a href="#your-rights">Your rights</a></li>
-      <li><a href="#keeping-it-safe">Keeping it safe</a></li>
-      <li><a href="#where-your-information-is">Where your information is</a></li>
-      <li><a href="#changes">Changes</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#previous-versions">Previous versions</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#what-this-policy-covers">1. What this policy covers</a></li>
+      <li><a href="#information-we-collect">2. Information we collect</a></li>
+      <li><a href="#sensitive-information">3. Sensitive information</a></li>
+      <li><a href="#what-we-do-not-collect">4. What we do not collect</a></li>
+      <li><a href="#accounts-and-sign-in">5. Accounts and sign-in (Supabase, Apple, Google)</a></li>
+      <li><a href="#subscriptions-and-payments">6. Subscriptions and payments (Apple, Google, RevenueCat)</a></li>
+      <li><a href="#crash-and-performance-reports">7. Crash and performance reports (Sentry)</a></li>
+      <li><a href="#analytics-and-advertising">8. Analytics and advertising (PostHog)</a></li>
+      <li><a href="#artificial-intelligence">9. Artificial intelligence</a></li>
+      <li><a href="#reminders-and-notifications">10. Reminders and notifications</a></li>
+      <li><a href="#how-we-use-information">11. How we use information</a></li>
+      <li><a href="#sharing">12. Sharing</a></li>
+      <li><a href="#children">13. Children</a></li>
+      <li><a href="#how-long-we-keep-it">14. How long we keep it</a></li>
+      <li><a href="#deleting-your-account">15. Deleting your account</a></li>
+      <li><a href="#your-rights-and-choices">16. Your rights and choices</a></li>
+      <li><a href="#security">17. Security</a></li>
+      <li><a href="#where-your-information-is">18. Where your information is</a></li>
+      <li><a href="#changes">19. Changes</a></li>
+      <li><a href="#contact">20. Contact</a></li>
     </ol>
   </nav>
 
-  <h2 class="sec" id="in-short">In short</h2>
+  <h2 class="sec" id="overview">Overview</h2>
   <div class="in-short">
     <ul>
-      <li>We collect what you give us to make the app work: your account, your children's names and ages, the prayers you write, and a record of what you prayed.</li>
-      <li><strong>We do not ask for a child's date of birth.</strong> We ask only how old they are, in years, and store the birth year that gives us, so the prayers can suit their age.</li>
-      <li><strong>We do not sell your information, we do not show advertising, and we do not track you.</strong> There is no analytics SDK and no advertising network in this app.</li>
+      <li><strong>We collect what you give us to make the app work:</strong> your account, your children's names and ages, what you write, and a record of what you prayed.</li>
+      <li><strong>We do not sell your information, we do not show advertising, and we do not track you</strong> across other apps or websites. There is no advertising network in the app.</li>
+      <li><strong>In the United States, the app tells us how you use it</strong>, such as which screens you open and when you start or finish a prayer, so we can make it better. This usage record is kept apart from your account and never includes which prayer it was, what you wrote or a child's name. You can turn it off in Settings. <strong>Outside the United States this is not collected at all.</strong></li>
       <li><strong>Nothing you write is sent to an AI model</strong>, by us or by anyone else.</li>
-      <li><strong>What you write is private to you.</strong> Your journal, your notes and your own prayer history are never visible to anyone else, in either direction.</li>
-      <li><strong>You can invite other adults you trust to pray for the children you choose.</strong> Only you can do this, and only you can end it. They see that child's first name and roughly how old they are — nothing else of yours.</li>
-      <li>You can delete your account, and everything in it, from inside the app at any time.</li>
+      <li><strong>What you write is private to you.</strong> No other user can read your Journal or your notes.</li>
+      <li><strong>You choose who prays with you.</strong> If you invite someone into your circle, they see the name of the children you chose, and your name. They do not see a child's age. You see when they pray for your child.</li>
+      <li><strong>We do not ask for a child's date of birth.</strong> We ask how old they are and keep only the year they were born.</li>
+      <li><strong>Prayers about health and wellbeing get extra care.</strong> We keep a record of which of these you prayed only if you turn that on, and nobody in your circle ever sees which ones they were.</li>
+      <li><strong>Apple or Google takes your payment.</strong> We never see your card details.</li>
+      <li><strong>You can delete your account, and everything in it, from inside the app at any time.</strong></li>
     </ul>
-    <p class="note">This is a summary. The full policy follows below.</p>
   </div>
 
-  <h2 class="sec" id="who-we-are">Who we are</h2>
-  <p>Over Their Lives is published by <strong>BLV Enterprises LLC</strong>, a New Jersey limited liability company ("we", "us").</p>
-  <div class="contact-block">
-    <p><strong>Contact:</strong> <a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a></p>
-    <p><strong>Post:</strong> 971 US Highway 202N, STE N, Branchburg, New Jersey, 08876</p>
-  </div>
+  <h2 class="sec" id="what-this-policy-covers">1. What this policy covers</h2>
+  <p>This policy covers the Over Their Lives app for iPhone and Android, and the website at overtheirlives.com.</p>
+  <p>Over Their Lives is published by <strong>BLV Enterprises LLC</strong>, a New Jersey limited liability company ("we", "us"). We decide how your information is used, which makes us the "controller" of it under UK data protection law.</p>
+  <p><strong>The app is for adults.</strong> You must be 18 or older to have an account. Children do not have accounts and never need to open the app.</p>
 
-  <h2 class="sec" id="what-we-collect">What we collect</h2>
-
-  <h3 class="sub" id="before-account">Before you have an account</h3>
-  <p>You can start using the app before you create an account: you can pray a full prayer and write a note. Both stay only on your phone until you create an account and give your consent — then they are saved to your account.</p>
+  <h2 class="sec" id="information-we-collect">2. Information we collect</h2>
 
   <h3 class="sub" id="your-account">Your account</h3>
-  <p>To create an account we need an <strong>email address</strong> and a <strong>name</strong>. We also store the settings you choose: your relationship to the children you pray for (for example "Father"), the name you give your prayer room, whether you prefer prayers step by step or flowing, your daily reminder time, and your chosen text size.</p>
+  <ul>
+    <li>Your <strong>email address</strong> and a <strong>name</strong>.</li>
+    <li>A <strong>password</strong>, if you sign up by email. It is stored in scrambled (hashed) form, and we cannot read it.</li>
+    <li>The choices you make while setting up: your relationship to the children you pray for (for example, "Father" or "Grandmother"), the name of your prayer room, how many minutes a day you want to pray, your reminder time, and whether you like prayers step by step or flowing.</li>
+    <li>A record of <strong>what you agreed to and when</strong>: the Terms of Use and this policy, the consents described in section 3, and which version of each.</li>
+  </ul>
 
   <h3 class="sub" id="your-children">Your children</h3>
-  <p>So the app can pray over a child by name, you give us, for each child: a <strong>name</strong>, the <strong>year they were born</strong>, and a <strong>gender</strong>.</p>
-  <p><strong>We do not ask for their date of birth.</strong> A full birth date next to a child's name is one of the most identifying things anyone can hold about them, and it would buy us nothing: the year alone is enough to choose prayers written for a child of their age, which is the only thing it is used for. We do not know, and cannot work out, the day or the month a child was born.</p>
-  <p>The gender is used so that prayers say "him" or "her" rather than talking around it.</p>
-  <p>We say more about children's information <a href="#childrens-information">below</a>.</p>
+  <p>For each child you add, you give us their <strong>name</strong>, <strong>gender,</strong> and <strong>age</strong>. We keep the age as a birth year only, so we never hold a date of birth. The name and gender let a prayer say the child's name and the appropriate pronoun. The age also lets the app offer prayers suited to them. You choose what to pray.</p>
+  <p>We hold no photos of your children.</p>
 
   <h3 class="sub" id="what-you-write">What you write</h3>
   <ul>
-    <li><strong>Prayers you write</strong> in the Journal, including anything you record about how a prayer was answered.</li>
-    <li><strong>Notes</strong> you add at the end of a prayer session.</li>
-    <li><strong>The names of people</strong> you add to your circle, so you can invite them to pray alongside you. We ask only for a name. We do not ask for, collect, or upload your contacts.</li>
+    <li><strong>Your Journal:</strong> prayers, notes, and testimonies you write, and anything you record about how a prayer was answered.</li>
+    <li><strong>Notes</strong> you add at the end of a prayer.</li>
+    <li><strong>Your Ox Pledge:</strong> the name you sign it with and the date.</li>
   </ul>
 
   <h3 class="sub" id="what-you-pray">What you pray</h3>
-  <p>Each time you pray, we record which prayer it was, which child it was for, when it started, how long it lasted, and whether you finished. We use this to show you where you are in a plan, what you have already prayed and what you missed. We also store the prayers you keep with a star, and the plans you begin.</p>
+  <p>Each time you pray, we record which prayer it was, which child it was for, when it started, how long it lasted, and whether you finished. We also keep the prayers you save, and the weeks and plans you begin. This is how the app shows your history, your place in a plan, and what you have not prayed yet.</p>
+  <p>Some prayers are about health and wellbeing. Section 3 explains how those are handled.</p>
+
+  <h3 class="sub" id="your-circle">Your circle</h3>
+  <p>If you invite someone to pray with you, we keep the <strong>name you type for them</strong>, which children you chose, and the invitation's link and code. We do not ask for their email address or phone number, and we never read your contacts. You send the invitation yourself, through your phone's own share menu.</p>
+  <p>If someone types a wrong invitation code, we count the failed attempts for 24 hours to stop guessing. For a person who is not signed in, the count is kept against a scrambled form of their network address that cannot be turned back into the address.</p>
+
+  <h3 class="sub" id="your-subscription">Your subscription</h3>
+  <p>Apple or Google takes your payment. We never see or store your card or bank details. We receive a record of your subscription: <strong>which plan, which store, whether it is active, and when it renews or ends.</strong> See section 6.</p>
 
   <h3 class="sub" id="your-device">Your device</h3>
-  <p>We store very little about your device. With each prayer session we record <strong>whether you use iPhone or Android and which version of the app</strong> you have, so a problem can be traced to the version that caused it. Nothing that identifies your phone itself.</p>
-  <p>The <strong>daily reminder is scheduled on your phone itself</strong> — the app asks your phone to raise a notification at a time you choose. No reminder is sent from our servers, and we do not hold a device or push token for you.</p>
-
-  <h3 class="sub" id="if-you-write-to-us">If you write to us</h3>
-  <p>If you email us, we keep the message and our reply so we can help you and so we have a record of what was asked.</p>
-
-  <h2 class="sec" id="what-we-do-not-collect">What we do not collect</h2>
   <ul>
-    <li><strong>No advertising, and no advertising identifiers.</strong> There is no ad network in this app and we do not sell or share your information with one.</li>
-    <li><strong>No analytics or tracking SDK.</strong> We do not measure you across other apps or sites.</li>
-    <li><strong>No location.</strong> The app never asks for it and never receives it.</li>
-    <li><strong>No contacts.</strong> We never ask for your address book.</li>
-    <li><strong>No microphone, camera, photos or files</strong>, beyond saving an image of your Ox Pledge to your own photo library if you ask for it, which happens on your phone.</li>
-    <li><strong>No social network tracking.</strong> If you sign in with Apple or Google, they learn that you signed in to Over Their Lives, and nothing about how you use it.</li>
+    <li>With each prayer, we record <strong>whether you use iPhone or Android and which version of the app</strong> you have, so a problem can be traced to the version that caused it.</li>
+    <li>If the app crashes, a crash report is sent to us. See section 7.</li>
+    <li>Like every internet service, the servers the app talks to see your <strong>network (IP) address</strong> when it connects, and it can appear in short-lived security logs. We do not use it to work out where you are or to build a profile of you.</li>
+    <li>Your phone tells our servers its <strong>time zone</strong> when it asks for your prayer history, so days are counted correctly. We do not store it.</li>
   </ul>
 
-  <h2 class="sec" id="artificial-intelligence">Artificial intelligence</h2>
-  <p><strong>We do not use artificial intelligence on anything you write.</strong> Nothing you type into a prayer, a journal entry or a note is sent to an AI model, by us or by anyone else. We do not use your writing to train anything, and there is no AI feature in the app that reads it.</p>
-  <p>The prayers the app offers you were written and reviewed by people before the app shipped. They are fixed text, chosen for your child's age and the theme you picked — not generated for you, and not shaped by what you have written.</p>
-
-  <h2 class="sec" id="why-we-use-it">Why we use it</h2>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th scope="col">What we do</th><th scope="col">Why we are allowed to</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Run your account and show you your own content</td><td>To perform our agreement with you</td></tr>
-        <tr><td>Pray over a child by name and at the right age</td><td>To perform our agreement with you</td></tr>
-        <tr><td>Show a child's first name and age to someone you invited to pray for them</td><td>Your consent, given when you send the invitation, which you can withdraw by ending it</td></tr>
-        <tr><td>Remind you at the time you asked</td><td>Your consent, which you can withdraw in Settings</td></tr>
-        <tr><td>Keep the app working, secure and free of faults</td><td>Our legitimate interest in a service that works</td></tr>
-        <tr><td>Answer you when you write to us</td><td>Our legitimate interest in supporting the people who use this</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>We do not make any decision about you by automated means that has a legal or similarly significant effect, and we do not profile you for advertising.</p>
-
-  <h3 class="sub" id="about-religious-belief">About religious belief</h3>
-  <p>Using an app to pray may say something about your beliefs, and in some countries that is treated as a special category of personal information. We do not ask you to tell us your religion and we do not infer or record one. To the extent that your use of the app implies a belief, we process that only to provide the app to you, on the basis of your explicit consent, given when you create an account. You can withdraw it by deleting your account.</p>
-
-  <h2 class="sec" id="who-else-can-see-it">Who else can see it</h2>
-  <p>We do not sell your information. We do not share it with advertisers.</p>
-  <p><strong>Other people you invite.</strong> If you invite someone to pray for one of your children, they are shown that child's first name and roughly how old they are, and nothing else belonging to you. This happens only because you asked for it, and stops when you end it. Nobody else sees anything of yours.</p>
-  <p>Otherwise we share only with the companies that run parts of the service for us, and only as far as they need:</p>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th scope="col">Who</th><th scope="col">What they do</th><th scope="col">Where</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>Supabase</strong> (Supabase, Inc.)</td><td>Hosts the database and handles sign-in. Your account, children, prayers and history are stored here.</td><td>United States (Oregon)</td></tr>
-        <tr><td><strong>Expo</strong> (650 Industries, Inc.)</td><td>Builds and delivers the app and its updates.</td><td>United States</td></tr>
-        <tr><td><strong>Apple</strong> and <strong>Google</strong></td><td>Distribute the app through their stores. Their own privacy policies cover what they collect when you download it.</td><td>Varies</td></tr>
-        <tr><td><strong>Apple</strong> and <strong>Google</strong>, if you sign in with them</td><td>Confirm who you are when you choose Sign in with Apple or Sign in with Google. They learn that you signed in; we receive your name and email address (with Apple, a private relay address if you choose to hide yours).</td><td>Varies</td></tr>
-        <tr><td><strong>Sentry</strong> (Functional Software, Inc.)</td><td>Receives a report when the app crashes, so we can fix it. Crash reports may include which screen you were on; they are not used to identify you.</td><td>United States</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>We may also disclose information if the law requires it, if we must defend a legal claim, or if the company is ever sold or merged — in which case the information would move with it, and this policy would continue to apply until you were told otherwise.</p>
-
-  <h2 class="sec" id="childrens-information">Children's information</h2>
-  <p><strong>This app is for parents and other adults. It is not directed at children and children do not have accounts.</strong></p>
-  <p>A child's name, the year they were born and their gender are given to us <strong>by their parent or guardian</strong>, and are used only to choose and personalise the prayers that parent prays. A child cannot sign in and cannot be contacted through the app. We do not knowingly collect information directly from a child.</p>
-  <p><strong>We do not ask for a child's date of birth</strong>, only the year, so we never hold the day or month a child was born.</p>
-  <p>By adding a child, you confirm you are their parent or guardian, or otherwise entitled to provide their information.</p>
-  <p><strong>Inviting someone to pray for your child.</strong> You may invite another adult — a spouse, a grandparent, a godparent — to pray for a child you have added. <strong>Only you can do this, for the children you name, and you can end it whenever you like.</strong></p>
-  <p>Someone you invite is shown <strong>the child's first name, and roughly how old they are</strong> so that the prayers suit them. They are not shown the year that child was born, your other children, anything you have written, or any of your own prayer history.</p>
-  <p>Because it is your child, <strong>you see when they pray and which prayer they prayed.</strong> You do not see how long they prayed for. They do not see your praying, and neither of you can read what the other writes in the Journal.</p>
-  <p>If you end the invitation, they lose access to the child immediately. The record of prayers they already prayed stays with you.</p>
-  <p>You can edit or remove a child at any time in Settings, and deleting your account deletes everything about every child on it, and ends every invitation.</p>
-  <p>If you believe a child's information has reached us some other way, write to <a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a> and we will remove it.</p>
-
-  <h2 class="sec" id="how-long-we-keep-it">How long we keep it</h2>
-  <p>We keep what is on your account for as long as your account exists. When you delete your account we delete it — see below.</p>
-
-  <h2 class="sec" id="deleting-your-account">Deleting your account</h2>
-  <p><strong>Settings → Account → Delete my account.</strong> It asks you to confirm, and then it is done: your account, your children, everything you wrote, your history, your kept prayers and your plans are removed, and every invitation you sent or accepted ends. It cannot be undone and we cannot restore it for you.</p>
-  <p>If someone in your circle prayed for one of your children, the record of their praying goes with your children. What they wrote in their own Journal stays theirs, as yours stays yours.</p>
-  <p>A copy may remain in our encrypted backups for up to 7 days before those expire. We do not use backups for anything but recovery.</p>
-  <p>If you would rather stop the reminders and keep your prayers, turn the daily reminder off instead.</p>
-
-  <h2 class="sec" id="your-rights">Your rights</h2>
-  <p>Wherever you live, you can ask us to:</p>
+  <h3 class="sub" id="how-you-use-the-app">How you use the app (United States only)</h3>
+  <p><strong>This happens only in the United States, and you can turn it off.</strong> If your phone's region is set to the United States and its time zone is an American one, the app sends the record below unless you turn it off in <strong>Settings → Privacy → Help improve the app</strong>. The app works the same either way.</p>
+  <p><strong>Everywhere else, nothing in this section is collected</strong>, and the switch does not appear.</p>
+  <p>The record is:</p>
   <ul>
-    <li><strong>give you a copy</strong> of what we hold about you</li>
+    <li><strong>which screens you open</strong>, by the screen's name only</li>
+    <li><strong>each step of setting up the app</strong> that you reach</li>
+    <li><strong>when you open and leave the app</strong></li>
+    <li><strong>when you start and finish a prayer</strong>, whether it was a guided prayer or a psalm or hymn, and whether you prayed it step by step or flowing</li>
+    <li><strong>when you open the app from a reminder</strong></li>
+    <li><strong>when a search in Discover finds nothing</strong>: that it happened, not what you typed</li>
+    <li><strong>what happens on the subscription screen</strong>: that you saw it, whether you tapped yearly or monthly, and whether the purchase went through</li>
+    <li><strong>when an account is deleted</strong>: only how many days it had existed, with no ID attached</li>
+    <li><strong>a few plain facts about your account and phone</strong>: your relationship to the children you pray for, how many children you have added, whether you have a subscription, whether you use iPhone or Android, the make and model of the phone and the size of its screen, the version of its system and of the app, and the language and time zone it is set to</li>
+  </ul>
+  <p>These are filed under <strong>an account ID, not your name or email address</strong>. Before you create an account, they are filed under a random ID made on your phone.</p>
+  <p><strong>What is never sent, wherever you are and whatever you choose:</strong> which prayer or topic you prayed, which child it was for, any child's name or age, anything you wrote in the Journal or in a note, anything you typed into a search, and any recording of your screen.</p>
+  <p>See section 8 for who receives this record.</p>
+
+  <h3 class="sub" id="kept-on-your-phone">Kept on your phone</h3>
+  <ul>
+    <li><strong>While you set up the app</strong>, your answers (your name, your children's names and birth years, your choices, and the note from your first prayer) are kept only on your phone. They reach us when you create your account. If you do not finish, they are removed from your phone a week after you started.</li>
+    <li><strong>Your sign-in</strong> is kept in your phone's secure storage.</li>
+    <li><strong>Your daily reminder</strong> is scheduled on your phone. See section 10.</li>
+    <li>The app is set so that none of this is copied into Android phone backups.</li>
+    <li>When you <strong>sign out or delete your account</strong>, the app clears what it kept on your phone about you and your children, including scheduled reminders.</li>
+  </ul>
+
+  <h3 class="sub" id="if-you-write-to-us">If you write to us</h3>
+  <p>If you email us, we keep your message and our reply so we can help you and have a record of what was asked.</p>
+
+  <h3 class="sub" id="our-website">Our website</h3>
+  <p>Our website does not use advertising cookies and does not follow you to other sites. Our website host keeps standard server logs, including IP addresses, for security.</p>
+
+  <h2 class="sec" id="sensitive-information">3. Sensitive information</h2>
+
+  <h3 class="sub" id="faith">Faith</h3>
+  <p>Using an app to pray says something about what you believe, and many laws treat religious belief as sensitive. We do not ask what your religion or denomination is, and we do not record or infer one. Because the app as a whole implies a belief, we ask for your <strong>explicit consent</strong> when you create your account before we keep what you share about your faith and your family. You can withdraw it at any time by deleting your account. The app cannot work without this information, so there is no way to use it and withhold it.</p>
+
+  <h3 class="sub" id="health-and-wellbeing">Health and wellbeing</h3>
+  <p>Some prayers are about a child's physical health, mental and emotional health, addiction, abuse or trauma, or their body and sexuality. A record of which of these you prayed for a named child could say something about that child's health.</p>
+  <p>So these are handled differently from every other prayer:</p>
+  <ul>
+    <li><strong>We keep a record of which health and wellbeing prayers you prayed only if you turn that on.</strong> It is a separate, optional choice at sign-up, and a switch in <strong>Settings → Privacy → Keep a record of health and wellbeing prayers</strong>.</li>
+    <li><strong>If it is off</strong>, we record that you prayed, and not which health or wellbeing topic it was. The app works the same in every other way.</li>
+    <li><strong>If you turn it off later</strong>, the topics already recorded are removed, along with any saved prayers and weeks on those topics.</li>
+    <li><strong>Your circle never sees which of these you prayed</strong>, whichever you choose. People you invite cannot see any of your prayers. When one of them prays a health or wellbeing prayer for your child, you see only that "a prayer" was prayed, not which one.</li>
+    <li>We never use this information for advertising, and we never sell or share it.</li>
+  </ul>
+  <p>Residents of Washington and Nevada: see also our <a href="/health-privacy">Consumer Health Data Privacy Policy</a>.</p>
+
+  <h2 class="sec" id="what-we-do-not-collect">4. What we do not collect</h2>
+  <ul>
+    <li><strong>No advertising and no advertising identifiers.</strong></li>
+    <li><strong>No tracking across other apps or sites.</strong> What section 2 describes under "How you use the app" is about this app only. It is never combined with what you do anywhere else, and it is never used for advertising.</li>
+    <li><strong>No recordings of your screen</strong>, and nothing that captures what you type.</li>
+    <li><strong>No location.</strong> The app never asks for it.</li>
+    <li><strong>No contacts.</strong> We never ask for your address book.</li>
+    <li><strong>No camera, microphone, photos or files.</strong> The one exception is saving a picture of your Ox Pledge to your own photo library if you ask for it, which happens on your phone. The app can add that picture; it cannot look at your photos.</li>
+    <li><strong>No photos of your children.</strong></li>
+    <li><strong>No date of birth</strong> for you or your children.</li>
+    <li><strong>No card or bank details.</strong></li>
+  </ul>
+
+  <h2 class="sec" id="accounts-and-sign-in">5. Accounts and sign-in (Supabase, Apple, Google)</h2>
+  <p>Your account and everything in it is stored with <strong>Supabase</strong>, which runs our database and sign-in, in the United States.</p>
+  <p>You can sign in with an email address and password, with Apple, or with Google.</p>
+  <ul>
+    <li><strong>Sign in with Apple:</strong> Apple confirms who you are. We receive your first name and your email address, or a private relay address if you choose to hide yours.</li>
+    <li><strong>Sign in with Google:</strong> Google confirms who you are. We receive your name and email address.</li>
+  </ul>
+  <p>Apple and Google learn that you signed in to Over Their Lives. They learn nothing about how you use it.</p>
+  <p>If you ask to reset your password or confirm your email address, we email you a one-time code.</p>
+
+  <h2 class="sec" id="subscriptions-and-payments">6. Subscriptions and payments (Apple, Google, RevenueCat)</h2>
+  <ul>
+    <li><strong>Apple or Google takes the payment</strong> and holds your billing details and receipts. Their privacy policies cover what they collect when you download the app or pay.</li>
+    <li><strong>RevenueCat</strong> manages subscriptions for us. It receives an account ID (a string of letters and numbers, not your name or email address), your purchase records from Apple or Google, the country of your store account, and basic technical details such as your app version. It does not receive the names of your children, your prayers, or anything you write.</li>
+    <li><strong>We keep</strong> which plan you have (monthly or yearly), which store it came from, whether it is active and when it renews or ends, so the app knows whether to let you in.</li>
+  </ul>
+  <p><strong>People in your circle</strong> are covered by your subscription. They are not charged, and we hold no purchase record for them, unless they add children of their own and buy a subscription themselves.</p>
+
+  <h2 class="sec" id="crash-and-performance-reports">7. Crash and performance reports (Sentry)</h2>
+  <p>When the app crashes, a report goes to <strong>Sentry</strong> so we can fix it. From about one in ten sessions it also receives timing information, such as how long a screen took to open.</p>
+  <p>A report includes your phone's model, its operating system version, the app version and which screen you were on. Before a report leaves your phone, the app strips out anything that points to a particular prayer, topic or invitation. Reports do not contain your name, your email address, your children's names or anything you wrote. Sentry is set not to store IP addresses and to delete reports after 30 days.</p>
+
+  <h2 class="sec" id="analytics-and-advertising">8. Analytics and advertising (PostHog)</h2>
+  <p><strong>There is no advertising.</strong> The app contains no advertising network and no advertising identifier, and nothing follows you across other apps or websites.</p>
+  <p><strong>In the United States only</strong>, the record described in section 2 under "How you use the app" goes to <strong>PostHog</strong>, which stores it in the United States. PostHog receives an account ID and that record. It never receives which prayer you prayed, what you wrote, or a child's name. Like any internet service, PostHog's servers see the network address your phone connects from; we have set it to discard that address and not to work out a location from it. Screen recording is switched off.</p>
+  <p>You can turn this off in <strong>Settings → Privacy → Help improve the app</strong>. Nothing more is sent from that moment.</p>
+  <p><strong>Counting across all accounts.</strong> Wherever you live, we count things from our own records across everyone who uses the app, for example, how many prayers were prayed this month, which topics are prayed most and least, or how many people finish a plan. We use these totals to decide which prayers to write next and what to fix. They are totals, not a view of any one family. Nobody reads what you write to produce them; where the Journal is counted at all, it is only how many entries there are. Prayers about health and wellbeing are counted only in totals large enough that no family could be picked out.</p>
+
+  <h2 class="sec" id="artificial-intelligence">9. Artificial intelligence</h2>
+  <p><strong>We do not use artificial intelligence on anything you write.</strong> Nothing you type into a prayer, a Journal entry or a note is sent to an AI model, by us or by anyone else. We do not use your writing to train anything.</p>
+  <p>The prayers in the app are fixed text. They were written by us, drafted with the help of AI tools. Each prayer was reviewed by humans before making it available to you. Some of the artwork was made with AI tools. The app makes prayers available that suit your child's age, and you choose which to pray. They are not generated for you and are not shaped by what you have written.</p>
+
+  <h2 class="sec" id="reminders-and-notifications">10. Reminders and notifications</h2>
+  <p>Your daily reminder is scheduled <strong>on your phone itself</strong>. The app asks your phone to show a notification at the time you chose. Nothing is sent from our servers, and we do not hold a device or push token for you.</p>
+  <p>A reminder may show your children's names on your lock screen. You can turn reminders off in Settings, or hide notification previews in your phone's own settings.</p>
+  <p>We keep your reminder time with your account so it follows you to a new phone.</p>
+
+  <h2 class="sec" id="how-we-use-information">11. How we use information</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">What we do</th><th scope="col">Our legal basis</th></tr></thead>
+      <tbody>
+        <tr><td data-label="What we do">Run your account and show you your own children, prayers and Journal</td><td data-label="Our legal basis">To perform our agreement with you</td></tr>
+        <tr><td data-label="What we do">Offer prayers suited to a child's age, with their name in them</td><td data-label="Our legal basis">To perform our agreement with you</td></tr>
+        <tr><td data-label="What we do">Keep what you share about your faith and your family</td><td data-label="Our legal basis">Your explicit consent, given at sign-up</td></tr>
+        <tr><td data-label="What we do">Keep a record of which health and wellbeing prayers you prayed</td><td data-label="Our legal basis">Your explicit consent, which is optional and can be withdrawn in Settings</td></tr>
+        <tr><td data-label="What we do">Show a child's name to someone you invite, and show you when they pray</td><td data-label="Our legal basis">To perform our agreement with you, at your request</td></tr>
+        <tr><td data-label="What we do">Manage your subscription</td><td data-label="Our legal basis">To perform our agreement with you</td></tr>
+        <tr><td data-label="What we do">Remind you at the time you asked</td><td data-label="Our legal basis">Your consent, which you can withdraw in Settings</td></tr>
+        <tr><td data-label="What we do">Fix crashes, keep the app secure and stop misuse</td><td data-label="Our legal basis">Our legitimate interest in a service that works and is safe</td></tr>
+        <tr><td data-label="What we do">Record how you use the app, in the United States only</td><td data-label="Our legal basis">Our legitimate interest in making the app better. You can turn it off in Settings</td></tr>
+        <tr><td data-label="What we do">Count totals across all accounts, to improve the prayers and the app</td><td data-label="Our legal basis">Our legitimate interest in making the app better; where a total touches belief or health, your explicit consent</td></tr>
+        <tr><td data-label="What we do">Answer you when you write to us</td><td data-label="Our legal basis">Our legitimate interest in supporting the people who use the app</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>We do not make decisions about you by automated means that have a legal or similarly significant effect, and we do not profile you.</p>
+
+  <h2 class="sec" id="sharing">12. Sharing</h2>
+  <p><strong>We do not sell your information. We do not share it with advertisers or data brokers.</strong></p>
+
+  <h3 class="sub" id="people-you-invite">People you invite</h3>
+  <p>You may invite other adults you trust, such as a spouse, a grandparent or a godparent, to pray for the children you choose. Only you can invite someone to pray for your children, and you can end it whenever you like.</p>
+  <p><strong>What someone you invite sees:</strong> the child's name and gender, and your name. Nothing else. They do not see the child's age, your other children, your Journal, your notes or your prayer history. The app uses the child's age only to offer them suitable prayers.</p>
+  <p><strong>What you see:</strong> when they prayed for your child and which prayer it was. You do not see how long they prayed, and health and wellbeing prayers appear only as "a prayer". They are told this before they join. Neither of you can read what the other writes.</p>
+  <p><strong>The invitation itself.</strong> Anyone who holds the link or the code can see the child's name and your name before they join, so send it only to the person it is for. An invitation that is not accepted stops working after 30 days.</p>
+  <p><strong>Ending it.</strong> You can end an invitation in Settings, and the person you invited can leave. Either way they lose access to the child immediately. The record of when they prayed stays with you.</p>
+
+  <h3 class="sub" id="companies-that-work-for-us">Companies that work for us</h3>
+  <p>They may use your information only to provide their service to us.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Who</th><th scope="col">What they do</th><th scope="col">Where</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Who"><strong>Supabase</strong> (Supabase, Inc.)</td><td data-label="What they do">Hosts the database and handles sign-in. Your account, children, prayers, Journal and history are stored here.</td><td data-label="Where">United States (Oregon)</td></tr>
+        <tr><td data-label="Who"><strong>Apple</strong> and <strong>Google</strong></td><td data-label="What they do">Distribute the app, take payment if you subscribe, and confirm who you are if you sign in with them.</td><td data-label="Where">Varies</td></tr>
+        <tr><td data-label="Who"><strong>RevenueCat</strong> (RevenueCat, Inc.)</td><td data-label="What they do">Manages subscriptions. Receives an account ID, purchase records and store country.</td><td data-label="Where">United States</td></tr>
+        <tr><td data-label="Who"><strong>Sentry</strong> (Functional Software, Inc.)</td><td data-label="What they do">Receives crash and performance reports.</td><td data-label="Where">United States</td></tr>
+        <tr><td data-label="Who"><strong>PostHog</strong> (PostHog, Inc.)</td><td data-label="What they do">Only in the United States, and not if you turn off Help improve the app. Receives an account ID and the record of how the app is used.</td><td data-label="Where">United States</td></tr>
+        <tr><td data-label="Who"><strong>Expo</strong> (650 Industries, Inc.)</td><td data-label="What they do">Builds the app and delivers its updates. When the app checks for an update, Expo's servers see your IP address and app version. They receive nothing from your account.</td><td data-label="Where">United States</td></tr>
+        <tr><td data-label="Who"><strong>Vercel</strong> (Vercel Inc.)</td><td data-label="What they do">Hosts overtheirlives.com.</td><td data-label="Where">United States</td></tr>
+        <tr><td data-label="Who"><strong>Resend</strong> (Resend, Inc.)</td><td data-label="What they do">Sends the one-time codes we email you. Receives your email address.</td><td data-label="Where">United States</td></tr>
+        <tr><td data-label="Who"><strong>Google Workspace</strong> (Google LLC)</td><td data-label="What they do">Hosts our support and privacy mailboxes, so it holds any email you send us.</td><td data-label="Where">United States</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub" id="when-the-law-requires-it-or-the-company-changes-hands">When the law requires it, or the company changes hands</h3>
+  <p>We may disclose information if the law requires it or if we must defend a legal claim. If the company is ever sold or merged, your information would move with it, this policy would continue to apply, and you would be told before anything changed.</p>
+
+  <h2 class="sec" id="children">13. Children</h2>
+  <p><strong>This app is for adults. It is not directed at children, and children do not have accounts.</strong> We do not knowingly collect information from a child, and under the US Children's Online Privacy Protection Act (COPPA), we do not knowingly collect information from anyone under 13. If we learn that someone under 18 has made an account, we will delete it.</p>
+  <p>A child's name, gender, and age are provided <strong>by the adult who prays for them</strong> and are used only to personalise that adult's prayers and keep them suited to the child's age. A child cannot sign in and cannot be contacted through the app.</p>
+  <p>If you are the child's parent or guardian, their information is yours to give. If you are not, for example a grandparent, an aunt or a godparent, add a child only with the knowledge and permission of their parent or guardian.</p>
+  <p>You can edit or remove a child at any time in <strong>Settings → Children</strong>. Deleting your account deletes everything about every child on it.</p>
+  <p>If you are a parent or guardian and believe your child's information is in the app without your permission, write to <a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a> and we will remove it.</p>
+
+  <h2 class="sec" id="how-long-we-keep-it">14. How long we keep it</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">What</th><th scope="col">How long</th></tr></thead>
+      <tbody>
+        <tr><td data-label="What">Your account, children, Journal, notes, prayer history, saved prayers and plans</td><td data-label="How long">Until you delete them or delete your account. They are kept if your subscription ends, so they are there if you return.</td></tr>
+        <tr><td data-label="What">Backups</td><td data-label="How long">Up to 7 days after deletion, encrypted, used only for recovery</td></tr>
+        <tr><td data-label="What">Failed invitation code attempts</td><td data-label="How long">24 hours</td></tr>
+        <tr><td data-label="What">Invitations that were never accepted</td><td data-label="How long">They stop working after 30 days. The record is deleted 90 days after that</td></tr>
+        <tr><td data-label="What">Invitations that were ended</td><td data-label="How long">The record is deleted 90 days after they end</td></tr>
+        <tr><td data-label="What">Crash and performance reports</td><td data-label="How long">30 days</td></tr>
+        <tr><td data-label="What">Records of how you use the app (United States only)</td><td data-label="How long">12 months, or until you delete your account if that is sooner</td></tr>
+        <tr><td data-label="What">Emails you send us</td><td data-label="How long">2 years</td></tr>
+        <tr><td data-label="What">Your subscription record, with us and with RevenueCat</td><td data-label="How long">Until you delete your account. Apple and Google keep their own record of your purchases under their own policies.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>We may keep something longer if a law or a legal claim requires it, and only for that purpose.</p>
+
+  <h2 class="sec" id="deleting-your-account">15. Deleting your account</h2>
+  <p><strong>Settings → Account → Delete my account.</strong> It asks you to confirm, and then it is done: your account, your children, everything you wrote, your history, your saved prayers and your plans are removed, every invitation you sent or accepted ends, and the records of how you used the app that are filed under your ID are deleted. It cannot be undone and we cannot restore it for you.</p>
+  <p>If you cannot open the app, you can ask us at <a href="/delete-account">overtheirlives.com/delete-account</a> or <a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a>. We will confirm it is you, and delete the account within 30 days.</p>
+  <p><strong>Deleting your account does not cancel a subscription.</strong> Apple and Google bill you, so cancel in your App Store or Google Play subscription settings first.</p>
+  <p>Your subscription record is deleted too, both ours and the one RevenueCat holds. Apple and Google keep their own record of what you bought, which we cannot delete. Backups remain for up to 7 days, as set out in section 14.</p>
+  <p>If someone in your circle prayed for one of your children, the record of their praying goes with your children. What they wrote in their own Journal stays theirs.</p>
+
+  <h2 class="sec" id="your-rights-and-choices">16. Your rights and choices</h2>
+
+  <h3 class="sub" id="wherever-you-live">Wherever you live</h3>
+  <p>You can ask us to:</p>
+  <ul>
+    <li><strong>give you a copy</strong> of what we hold about you, in a form you can read and reuse</li>
     <li><strong>correct</strong> anything wrong</li>
     <li><strong>delete</strong> it</li>
     <li><strong>stop or limit</strong> what we do with it</li>
-    <li><strong>withdraw consent</strong> you have given</li>
+    <li><strong>withdraw a consent</strong> you have given</li>
   </ul>
-  <p>Depending on where you live you may also have the right to <strong>object</strong> to processing, to <strong>portability</strong>, and to <strong>complain to your data protection authority</strong> — in the UK, the Information Commissioner's Office; in the EU, your national authority.</p>
-  <p><strong>We will not treat you differently for exercising any of these rights.</strong></p>
-  <p>Most of it you can do yourself in Settings, which is faster than asking us. For anything else, write to <strong><a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a></strong>. We will answer within 30 days, and we may need to check you are who you say you are before we act.</p>
-  <p><strong>California residents:</strong> we do not sell or share personal information as the CCPA/CPRA define those terms, and we have not done so in the preceding twelve months. We do not knowingly sell the personal information of anyone under 16.</p>
+  <p>Most of this you can do yourself in Settings, which is faster than asking us. For anything else, write to <strong><a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a></strong>. We answer within 30 days, and we may need to check you are who you say you are first. Someone you authorise may ask on your behalf.</p>
+  <p><strong>We will not treat you differently for using any of these rights.</strong></p>
 
-  <h2 class="sec" id="keeping-it-safe">Keeping it safe</h2>
-  <p>Your information is encrypted in transit and at rest. Access to the database is restricted so that <strong>your account can only ever read and write its own rows</strong> — one account cannot reach another's children, prayers or history. Administrative access is limited to people who need it and protected by two-factor authentication.</p>
-  <p>No service can promise perfect security. If a breach ever affects your information we will tell you, and any regulator we are required to tell, as quickly as we reasonably can.</p>
-  <p>We would tell you by email, at the address on your account, and by a notice inside the app and on this page. Keeping a working email address on your account is what lets us reach you, so it is worth keeping it current.</p>
+  <h3 class="sub" id="united-kingdom">United Kingdom</h3>
+  <p>You also have the right to <strong>object</strong> to processing based on our legitimate interests, the right to <strong>data portability</strong>, and the right to <strong>complain</strong> to the Information Commissioner's Office at <a href="https://ico.org.uk" rel="noopener">ico.org.uk</a>.</p>
+  <p>Our representative in the UK is Prighter Ltd, 20 Mortlake Mortlake High Street, London, SW14 8JN, United Kingdom. You can send them a request about your information at <a href="https://app.prighter.com/portal/overtheirlives" rel="noopener">app.prighter.com/portal/overtheirlives</a>.</p>
 
-  <h2 class="sec" id="where-your-information-is">Where your information is</h2>
-  <p>We are in the United States and our systems are in the United States. If you use the app from elsewhere, your information is transferred to and processed in the US, where data protection law may differ from your own. Where that transfer is from the UK or the EEA, we rely on the European Commission's Standard Contractual Clauses with our providers.</p>
-
-  <h2 class="sec" id="changes">Changes</h2>
-  <p>If we change this policy we will post the new version here and change the date at the top. If the change is significant, if we begin collecting something materially different or using it in a materially different way, we will tell you in the app before it takes effect.</p>
-
-  <h2 class="sec" id="contact">Contact</h2>
-  <div class="contact-block">
-    <p><strong><a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a></strong></p>
-    <p>BLV Enterprises LLC, 971 US Highway 202N, STE N, Branchburg, New Jersey, 08876</p>
-  </div>
-
-  <h2 class="sec" id="previous-versions">Previous versions</h2>
+  <h3 class="sub" id="united-states">United States</h3>
+  <p>Depending on your state, you may have the right to access, correct, delete and receive a copy of your personal information, and to opt out of its sale, of targeted advertising and of profiling. We do none of those three things, so there is nothing to opt out of. You can still turn off the record of how you use the app, in <strong>Settings → Privacy → Help improve the app</strong>.</p>
   <ul>
-    <li><a href="/privacy/2026-10-18">18 October 2026</a></li>
-    <li><a href="/privacy/2026-10-17">17 October 2026</a></li>
-    <li><a href="/privacy/2026-10-05">5 October 2026</a></li>
+    <li>We do not <strong>sell</strong> personal information, and we do not <strong>share</strong> it for cross-context behavioural advertising. We have not done so in the past twelve months.</li>
+    <li>We use <strong>sensitive information</strong> (what the app implies about your faith, and health and wellbeing prayers if you turned that on) only to provide the app to you, and only with your consent.</li>
+    <li>If we decline a request, you may <strong>appeal</strong> by replying to our answer or writing to <a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a> with "Appeal" in the subject. We answer appeals within 45 days. If you are still not satisfied, you may contact your state's attorney general.</li>
   </ul>
+
+  <h2 class="sec" id="security">17. Security</h2>
+  <ul>
+    <li>Your information is encrypted in transit and at rest.</li>
+    <li>The database is set so that <strong>your account can only ever read and write its own rows</strong>. One account cannot reach another's children, Journal or history, except for what section 12 describes for people you invite.</li>
+    <li>Your sign-in is kept in your phone's secure storage.</li>
+    <li>Administrative access is limited to the people who need it and protected by two-factor authentication.</li>
+  </ul>
+  <p>No service can promise perfect security. If a breach ever affects your information we will tell you, and any regulator we are required to tell, as quickly as we reasonably can. We would tell you by email at the address on your account and by a notice in the app, so it is worth keeping that address current.</p>
+
+  <h2 class="sec" id="where-your-information-is">18. Where your information is</h2>
+  <p>We are in the United States and so are our systems. If you use the app from elsewhere, your information is transferred to and processed in the United States, where data protection law may differ from your own. Where that transfer is from the UK, we rely on the European Commission's Standard Contractual Clauses with the UK addendum to them, in our agreements with the companies listed in section 12.</p>
+
+  <h2 class="sec" id="changes">19. Changes</h2>
+  <p>If we change this policy we will post the new version here and change the date at the top. If the change is significant, meaning we begin collecting something materially different or using it in a materially different way, we will tell you in the app before it takes effect, and ask for your consent again where the law requires it.</p>
+  <p>When this policy changes, earlier versions will be listed at the bottom of this page.</p>
+
+  <h2 class="sec" id="contact">20. Contact</h2>
+  <p><strong>Privacy questions and requests:</strong> <a href="mailto:privacy@overtheirlives.com">privacy@overtheirlives.com</a></p>
+  <p><strong>Help with the app:</strong> <a href="mailto:support@overtheirlives.com">support@overtheirlives.com</a></p>
+  <p><strong>Post:</strong> BLV Enterprises LLC, 971 US Highway 202N, STE N, Branchburg, New Jersey, 08876, United States</p>
 
 </main>
 
@@ -448,7 +368,8 @@
   <div class="wrap">
     <p>Over Their Lives is a product of <strong>BLV Enterprises LLC</strong><br />
     971 US Highway 202N, STE N, Branchburg, NJ 08876<br />
-    <a href="mailto:support@overtheirlives.com">support@overtheirlives.com</a> &middot; <a href="/support">Support</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/delete-account">Delete account</a></p>
+    <a href="mailto:support@overtheirlives.com">support@overtheirlives.com</a> &middot; <a href="/support">Support</a> &middot; <a href="/delete-account">Delete account</a><br />
+    <a href="/terms">Terms of Use</a> &middot; <a href="/privacy">Privacy Policy</a> &middot; <a href="/health-privacy">Consumer Health Data Privacy Policy</a></p>
     <p class="copy">&copy; 2026 BLV Enterprises LLC</p>
   </div>
 </footer>

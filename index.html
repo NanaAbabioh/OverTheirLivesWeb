@@ -12,7 +12,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Over Their Lives — Prayers That Know Your Child by Name" />
-<meta property="og:description" content="Personalized prayers for your children — body, soul, and spirit. Launching Christmas Day 2026. Become a founding family." />
+<meta property="og:description" content="Personalized prayers for your children — body, soul, and spirit. Launching Christmas Day 2026." />
 <meta property="og:image" content="assets/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -216,82 +216,6 @@
   .hero-entity strong { color: var(--cream); font-weight: 500; }
 
   /* =====================================================
-     EMAIL FORM
-  ===================================================== */
-  .signup { max-width: 520px; }
-  .form-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .form-row input[type="email"] {
-    flex: 1 1 220px;
-    min-width: 0;
-    padding: 15px 18px;
-    font-family: var(--sans);
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--cream);
-    background: rgba(11,15,26,0.55);
-    border: 1px solid rgba(246,239,226,0.28);
-    border-radius: 10px;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-  }
-  .form-row input[type="email"]::placeholder { color: var(--cream-faint); }
-  .form-row input[type="email"]:focus {
-    border-color: var(--gold);
-    box-shadow: 0 0 0 3px rgba(227,169,79,0.25);
-  }
-
-  .btn {
-    flex: 0 0 auto;
-    padding: 15px 26px;
-    font-family: var(--sans);
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: var(--midnight);
-    background: linear-gradient(180deg, var(--gold-soft) 0%, var(--gold) 100%);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 6px 20px rgba(227,169,79,0.32);
-    transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
-    white-space: nowrap;
-  }
-  .btn:hover { transform: translateY(-1px); box-shadow: 0 9px 26px rgba(227,169,79,0.42); filter: brightness(1.03); }
-  .btn:active { transform: translateY(0); }
-  .btn:disabled { opacity: 0.7; cursor: default; transform: none; }
-
-  .microcopy {
-    margin-top: 12px;
-    font-size: 0.85rem;
-    color: var(--cream-dim);
-  }
-  .form-error {
-    margin-top: 10px;
-    font-size: 0.85rem;
-    color: var(--coral);
-    min-height: 1.1em;
-  }
-
-  .form-success {
-    display: none;
-    padding: 20px 22px;
-    background: rgba(61,90,128,0.22);
-    border: 1px solid rgba(227,169,79,0.5);
-    border-radius: 12px;
-    font-family: var(--serif);
-    font-size: 1.5rem;
-    color: var(--cream);
-  }
-  .signup.done .form-panel { display: none; }
-  .signup.done .form-success { display: block; }
-
-  /* =====================================================
      SECTIONS
   ===================================================== */
   section { position: relative; }
@@ -358,14 +282,6 @@
       linear-gradient(180deg, var(--deep-night) 0%, var(--midnight) 100%);
   }
   .founding h2 { font-size: clamp(2.1rem, 5vw, 3.4rem); margin-bottom: 20px; }
-  .founding .body {
-    font-size: clamp(1.05rem, 2vw, 1.22rem);
-    color: var(--cream-dim);
-    max-width: 34em;
-    margin: 0 auto 30px;
-  }
-  .founding .signup { margin: 0 auto; }
-  .founding .form-success { text-align: center; }
 
   /* Countdown */
   .countdown {
@@ -454,7 +370,6 @@
   }
   @media (max-width: 480px) {
     .wrap { padding: 0 20px; }
-    .btn { flex: 1 1 100%; }
   }
 </style>
 </head>
@@ -484,22 +399,6 @@
       <h1>Cover your children in prayer — by name.</h1>
       <p class="subline">Over Their Lives helps you consistently and intentionally pray personalized prayers over the body, soul, and spirit of your children. Coming soon — this Christmas Day.</p>
       <p class="hero-entity">Over Their Lives is a product of <strong>BLV Enterprises LLC</strong>, Branchburg, New Jersey.</p>
-
-      <!-- SIGNUP (hero) -->
-      <form class="signup" data-signup novalidate
-            action="https://formspree.io/f/xaewqpoo" method="POST">
-        <div class="form-panel">
-          <div class="form-row">
-            <label class="sr-only" for="email-hero" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Your email address</label>
-            <input id="email-hero" type="email" name="email" required
-                   autocomplete="email" placeholder="you@email.com" />
-            <button class="btn" type="submit">Become a Founding Family</button>
-          </div>
-          <p class="form-error" data-error aria-live="polite"></p>
-          <p class="microcopy">Free to join today — Founding Families get first access to Over Their Lives, before everyone else.</p>
-        </div>
-        <div class="form-success" role="status">You're in. See you Christmas morning. 🕊️</div>
-      </form>
     </div>
   </div>
 </header>
@@ -539,24 +438,6 @@
       <div class="cd-unit"><div class="cd-num" data-mins>—</div><div class="cd-label">Minutes</div></div>
       <div class="cd-unit"><div class="cd-num" data-secs>—</div><div class="cd-label">Seconds</div></div>
     </div>
-
-    <p class="body reveal">Over Their Lives is our gift to your family this Christmas. Founding families get early access, a founding-family badge in the app, and launch-week perks. It costs nothing to join the list.</p>
-
-    <!-- SIGNUP (repeat) -->
-    <form class="signup reveal" data-signup novalidate
-          action="https://formspree.io/f/xaewqpoo" method="POST">
-      <div class="form-panel">
-        <div class="form-row">
-          <label for="email-join" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Your email address</label>
-          <input id="email-join" type="email" name="email" required
-                 autocomplete="email" placeholder="you@email.com" />
-          <button class="btn" type="submit">Become a Founding Family</button>
-        </div>
-        <p class="form-error" data-error aria-live="polite"></p>
-        <p class="microcopy">Free to join today — Founding Families get first access to Over Their Lives, before everyone else.</p>
-      </div>
-      <div class="form-success" role="status">You're in. See you Christmas morning. 🕊️</div>
-    </form>
   </div>
 </section>
 
@@ -584,9 +465,14 @@
         <span class="foot-dot" aria-hidden="true">·</span>
         <a href="/support">Support</a>
         <span class="foot-dot" aria-hidden="true">·</span>
-        <a href="/privacy">Privacy</a>
-        <span class="foot-dot" aria-hidden="true">·</span>
         <a href="/delete-account">Delete account</a>
+      </p>
+      <p class="foot-links">
+        <a href="/terms">Terms of Use</a>
+        <span class="foot-dot" aria-hidden="true">·</span>
+        <a href="/privacy">Privacy Policy</a>
+        <span class="foot-dot" aria-hidden="true">·</span>
+        <a href="/health-privacy">Consumer Health Data Privacy Policy</a>
       </p>
     </div>
     <p class="foot-line">© 2026 BLV Enterprises LLC</p>
@@ -607,61 +493,6 @@
       });
     }, { threshold: 0.14 });
     els.forEach(function (el) { io.observe(el); });
-  })();
-
-  /* ---------- Email capture ----------
-     Validates client-side and shows the warm success state.
-     Wiring a provider is a one-line change: set FORM_ACTION_PLACEHOLDER
-     to your form endpoint (Kit / Formspree / Mailchimp). If the action is
-     a real URL, the form POSTs to it (fetch) and still shows the success
-     state without leaving the page. Until then it "succeeds" locally so
-     the experience is testable.
-  */
-  (function () {
-    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    document.querySelectorAll('[data-signup]').forEach(function (form) {
-      var input = form.querySelector('input[type="email"]');
-      var errEl = form.querySelector('[data-error]');
-      var btn   = form.querySelector('button[type="submit"]');
-
-      form.addEventListener('submit', function (ev) {
-        ev.preventDefault();
-        errEl.textContent = '';
-        var email = (input.value || '').trim();
-
-        if (!EMAIL_RE.test(email)) {
-          errEl.textContent = 'Please enter a valid email address.';
-          input.focus();
-          return;
-        }
-
-        var action = form.getAttribute('action');
-        var wired = action && action.indexOf('FORM_ACTION_PLACEHOLDER') === -1;
-
-        var succeed = function () { form.classList.add('done'); };
-
-        if (!wired) {
-          // Provider not chosen yet — succeed locally so the flow is testable.
-          succeed();
-          return;
-        }
-
-        btn.disabled = true;
-        btn.textContent = 'Joining…';
-        var data = new FormData(form);
-        fetch(action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
-          .then(function (r) {
-            if (r.ok) { succeed(); }
-            else { throw new Error('bad response'); }
-          })
-          .catch(function () {
-            btn.disabled = false;
-            btn.textContent = 'Become a Founding Family';
-            errEl.textContent = 'Something went wrong. Please try again.';
-          });
-      });
-    });
   })();
 
   /* ---------- Countdown to Christmas Day 2026 ---------- */
