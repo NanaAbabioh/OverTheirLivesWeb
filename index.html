@@ -6,13 +6,13 @@
 
 <title>Over Their Lives — Prayers That Know Your Child by Name</title>
 <link rel="canonical" href="https://overtheirlives.com/" />
-<meta name="description" content="Over Their Lives helps you consistently and intentionally pray personalized prayers over the body, soul, and spirit of your children. Coming Christmas Day 2026. Built by BLV Enterprises LLC." />
-<meta name="theme-color" content="#0B0F1A" />
+<meta name="description" content="Over Their Lives helps you pray intentionally and consistently over your children, their whole being: body, soul and spirit. Coming soon to iPhone and Android. Built by BLV Enterprises LLC." />
+<meta name="theme-color" content="#FAF7F0" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Over Their Lives — Prayers That Know Your Child by Name" />
-<meta property="og:description" content="Personalized prayers for your children — body, soul, and spirit. Launching Christmas Day 2026." />
+<meta property="og:description" content="Personalized prayers for your children — body, soul, and spirit. Coming soon to iPhone and Android." />
 <meta property="og:image" content="assets/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -22,443 +22,182 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Over Their Lives — Prayers That Know Your Child by Name" />
-<meta name="twitter:description" content="Personalized prayers for your children — body, soul, and spirit. Launching Christmas Day 2026." />
+<meta name="twitter:description" content="Personalized prayers for your children — body, soul, and spirit. Coming soon to iPhone and Android." />
 <meta name="twitter:image" content="assets/og-image.jpg" />
 
 <!-- Favicons -->
-<link rel="icon" href="assets/favicon.png" type="image/png" />
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="icon" href="/assets/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
 <!-- Fonts: system fallback renders instantly; Google Fonts swap in -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Literata:ital,opsz,wght@0,7..72,400;1,7..72,400&display=swap" rel="stylesheet" />
 
-<style>
-  :root {
-    --midnight:    #0B0F1A;
-    --deep-night:  #1C2A42;
-    --navy:        #3D5A80; /* Spirit */
-    --plum:        #7B2869; /* Soul */
-    --coral:       #E07A5F; /* Body */
-    --gold:        #E3A94F; /* accents / CTA */
-    --gold-soft:   #f0c884;
-    --cream:       #F6EFE2;
-    --cream-dim:   rgba(246, 239, 226, 0.72);
-    --cream-faint: rgba(246, 239, 226, 0.55);
-
-    /* the app's palette, for everything below the hero photo */
-    --bg:        #FAF7F0;
-    --surface:   #FFFDF8;
-    --ink:       #241F1A;
-    --ink-soft:  #6B6156;
-    --ink-faint: #9C9083;
-    --brand:     #03224A;
-    --accent:    #8A6A2A;
-    --hair:      #E4DCCE;
-
-    --serif: "Fraunces", Georgia, "Times New Roman", serif;
-    --sans:  "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-
-    --maxw: 1120px;
-  }
-
-  * { box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-weight: 400;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-  }
-
-  h1, h2, h3 {
-    font-family: var(--serif);
-    font-weight: 400;
-    line-height: 1.12;
-    margin: 0;
-    letter-spacing: -0.01em;
-  }
-
-  p { margin: 0; }
-
-  a { color: var(--brand); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  .wrap {
-    width: 100%;
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  .eyebrow {
-    font-family: var(--sans);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: clamp(1rem, 4.6vw, 2.35rem);
-    color: var(--gold);
-    display: block;
-    line-height: 1.1;
-    margin-bottom: 14px;
-  }
-
-  /* ---------- Top nav (overlay on hero) ---------- */
-  .hero-nav { position: absolute; top: 0; left: 0; width: 100%; z-index: 6; }
-  .hero-nav .nav-wrap {
-    max-width: 1120px; margin: 0 auto; padding: 20px 24px;
-    display: flex; align-items: center; gap: 14px;
-  }
-  .hero-nav .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .hero-nav .nav-logo img { width: 38px; height: 38px; border-radius: 9px; }
-  .hero-nav .nav-brand { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--cream); }
-  .hero-nav .nav-links { margin-left: auto; display: flex; gap: 22px; }
-  .hero-nav .nav-links a {
-    font-family: var(--sans); font-weight: 400; font-size: 0.96rem;
-    color: var(--cream); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap;
-  }
-  .hero-nav .nav-links a:hover { color: var(--gold); }
-  @media (max-width: 480px) {
-    .hero-nav .nav-brand { display: none; }
-    .hero-nav .nav-links { gap: 16px; }
-    .hero-nav .nav-links a { font-size: 0.9rem; }
-    .hero-nav .nav-wrap { padding: 16px 20px; }
-  }
-
-  /* ---------- Reveal-on-scroll ---------- */
-  .reveal {
-    opacity: 0;
-    transform: translateY(22px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
-    will-change: opacity, transform;
-  }
-  .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    .reveal { opacity: 1; transform: none; transition: none; }
-    html { scroll-behavior: auto; }
-  }
-
-  /* =====================================================
-     HERO
-  ===================================================== */
-  .hero {
-    position: relative;
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
-    color: var(--cream);
-    /* documented fallback if hero.jpg is missing */
-    background:
-      radial-gradient(120% 90% at 50% 118%, rgba(227,169,79,0.34) 0%, rgba(227,169,79,0) 55%),
-      linear-gradient(180deg, #0B0F1A 0%, #1C2A42 100%);
-    background-size: cover;
-    background-position: center 42%;
-    overflow: hidden;
-  }
-  .hero__img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 42%;
-    z-index: 0;
-  }
-  .hero__scrim {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background:
-      linear-gradient(180deg, rgba(11,15,26,0.72) 0%, rgba(11,15,26,0.28) 34%, rgba(11,15,26,0.34) 62%, rgba(11,15,26,0.92) 100%),
-      linear-gradient(90deg, rgba(11,15,26,0.78) 0%, rgba(11,15,26,0.22) 46%, rgba(11,15,26,0) 74%);
-  }
-  /* soft gold glow that breathes gently up from the base */
-  .hero__glow {
-    position: absolute;
-    left: 50%; bottom: -18%;
-    width: 130%; height: 60%;
-    transform: translateX(-50%);
-    z-index: 1;
-    background: radial-gradient(50% 60% at 50% 100%, rgba(227,169,79,0.28) 0%, rgba(227,169,79,0) 70%);
-    pointer-events: none;
-    animation: breathe 7s ease-in-out infinite;
-  }
-  @keyframes breathe {
-    0%, 100% { opacity: 0.65; }
-    50%      { opacity: 1; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .hero__glow { animation: none; }
-  }
-
-  .hero__content {
-    position: relative;
-    z-index: 2;
-    padding: 96px 0;
-    max-width: 640px;
-  }
-  .hero h1 {
-    font-size: clamp(2.6rem, 7vw, 4.6rem);
-    margin: 18px 0 20px;
-    text-shadow: 0 2px 26px rgba(11,15,26,0.55);
-  }
-  .hero .subline {
-    font-size: clamp(1.05rem, 2.2vw, 1.32rem);
-    color: var(--cream);
-    max-width: 34em;
-    margin-bottom: 18px;
-    text-shadow: 0 1px 14px rgba(11,15,26,0.6);
-  }
-  .hero-entity {
-    font-size: 0.9rem;
-    color: var(--cream-dim);
-    margin: 0 0 30px;
-    letter-spacing: 0.01em;
-    text-shadow: 0 1px 10px rgba(11,15,26,0.6);
-  }
-  .hero-entity strong { color: var(--cream); font-weight: 500; }
-
-  /* =====================================================
-     SECTIONS
-  ===================================================== */
-  section { position: relative; }
-
-  .section-pad { padding: clamp(72px, 11vw, 130px) 0; }
-
-  /* Body / Soul / Spirit cards */
-  .dims { background: var(--bg); }
-  .dims .head {
-    text-align: center;
-    margin-bottom: clamp(40px, 6vw, 64px);
-  }
-  .dims h2 { font-size: clamp(1.9rem, 4.4vw, 3rem); }
-
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-  .card {
-    position: relative;
-    padding: 34px 28px 32px;
-    background: var(--surface);
-    border: 1px solid var(--hair);
-    border-radius: 16px;
-    overflow: hidden;
-    transition: transform 0.25s ease, border-color 0.25s ease;
-  }
-  .card:hover { transform: translateY(-4px); border-color: var(--ink-faint); }
-  .card::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 4px;
-    background: var(--accent);
-  }
-  .card::after {
-    content: "";
-    position: absolute;
-    top: -40%; right: -30%;
-    width: 220px; height: 220px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-    opacity: 0.1;
-    pointer-events: none;
-  }
-  .card h3 {
-    font-size: 2rem;
-    margin: 0 0 12px;
-    color: var(--accent);
-  }
-  .card p { color: var(--ink-soft); font-size: 1.02rem; }
-
-  .card--body   { --accent: #A84B33; } /* the app's coral for text */
-  .card--soul   { --accent: #7B2869; }
-  .card--spirit { --accent: #3D5A80; }
-
-  /* Founding families / final CTA */
-  .founding {
-    position: relative;
-    text-align: center;
-    background: var(--surface);
-    border-top: 1px solid var(--hair);
-  }
-  .founding h2 { font-size: clamp(2.1rem, 5vw, 3.4rem); margin-bottom: 20px; }
-
-  /* Countdown */
-  .countdown {
-    display: flex;
-    justify-content: center;
-    gap: clamp(14px, 4vw, 34px);
-    margin: 0 auto 40px;
-    flex-wrap: wrap;
-  }
-  .cd-unit { min-width: 62px; }
-  .cd-num {
-    font-family: var(--serif);
-    font-size: clamp(2.2rem, 6vw, 3.4rem);
-    font-weight: 400;
-    color: var(--brand);
-    line-height: 1;
-    font-variant-numeric: tabular-nums;
-  }
-  .cd-label {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.22em;
-    font-weight: 600;
-    color: var(--accent);
-    margin-top: 8px;
-  }
-
-  /* =====================================================
-     FOOTER
-  ===================================================== */
-  footer {
-    background: var(--bg);
-    border-top: 1px solid var(--hair);
-    padding: 56px 0 44px;
-    text-align: center;
-  }
-  .footer-mark {
-    width: 68px; height: 68px;
-    border-radius: 14px;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 20px rgba(36,31,26,0.16);
-  }
-  .socials {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin: 18px 0 24px;
-  }
-  .socials a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px; height: 42px;
-    border-radius: 50%;
-    border: 1px solid var(--hair);
-    color: var(--ink);
-    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
-  }
-  .socials a:hover { border-color: var(--accent); background: rgba(138,106,42,0.1); transform: translateY(-2px); text-decoration: none; }
-  .socials svg { width: 20px; height: 20px; fill: currentColor; }
-  .foot-company {
-    margin: 4px 0 18px;
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-    line-height: 1.7;
-  }
-  .foot-company strong { color: var(--ink); font-weight: 600; }
-  .foot-address { color: var(--ink-soft); }
-  .foot-links { margin-top: 6px; }
-  .foot-links a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
-  .foot-dot { color: var(--ink-faint); margin: 0 8px; }
-  .foot-line {
-    font-size: 0.82rem;
-    color: var(--ink-soft);
-    letter-spacing: 0.04em;
-  }
-
-  /* =====================================================
-     RESPONSIVE
-  ===================================================== */
-  @media (max-width: 860px) {
-    .cards { grid-template-columns: 1fr; gap: 16px; }
-    .hero__scrim {
-      background:
-        linear-gradient(180deg, rgba(11,15,26,0.66) 0%, rgba(11,15,26,0.35) 40%, rgba(11,15,26,0.94) 100%);
-    }
-    .hero__content { padding: 88px 0 72px; }
-  }
-  @media (max-width: 480px) {
-    .wrap { padding: 0 20px; }
-  }
-</style>
+<link rel="stylesheet" href="/assets/home.css" />
 </head>
 <body>
 
-<!-- ============================ HERO ============================ -->
-<header class="hero" id="top">
-  <nav class="hero-nav" aria-label="Primary">
-    <div class="nav-wrap">
-      <a class="nav-logo" href="/"><img src="assets/mark-256.png" alt="" /><span class="nav-brand">Over Their Lives</span></a>
-      <div class="nav-links">
-        <a href="/about">About</a>
-        <a href="/how-it-works">How it works</a>
-        <a href="/faq">FAQ</a>
-      </div>
-    </div>
-  </nav>
-  <img class="hero__img" src="assets/hero.jpg"
-       alt="A glowing tent standing in an open field at golden hour, a parent leading a child by the hand into the warm light inside — the covering over a family."
-       fetchpriority="high" />
-  <div class="hero__scrim"></div>
-  <div class="hero__glow"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <linearGradient id="plum" gradientUnits="userSpaceOnUse" x1="0" y1="1024" x2="1204.7" y2="722.8"><stop offset="0" stop-color="#33307F"/><stop offset="0.5" stop-color="#7B1F6E"/><stop offset="1" stop-color="#B5234F"/></linearGradient>
+  <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="1024" x2="1204.7" y2="722.8"><stop offset="0" stop-color="#8A6A2A"/><stop offset="0.55" stop-color="#B8923E"/><stop offset="1" stop-color="#D9B665"/></linearGradient>
+</defs></svg>
 
-  <div class="wrap">
-    <div class="hero__content">
-      <span class="eyebrow">Pray&nbsp;|&nbsp;Speak&nbsp;|&nbsp;Declare</span>
-      <h1>Cover your children in prayer — by name.</h1>
-      <p class="subline">Over Their Lives helps you consistently and intentionally pray personalized prayers over the body, soul, and spirit of your children. Coming soon — this Christmas Day.</p>
-      <p class="hero-entity">Over Their Lives is a product of <strong>BLV Enterprises LLC</strong>, Branchburg, New Jersey.</p>
-    </div>
+<header class="site-nav">
+  <div class="nav-wrap">
+    <a class="nav-logo" href="/"><img src="/assets/mark-256.png" alt="" /><span class="nav-brand">Over Their Lives</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <button class="nav-pray" type="button" data-pray hidden>Pray now</button>
+      <a href="#music">Music</a>
+      <a href="/faq">FAQ</a>
+    </nav>
   </div>
 </header>
 
-<!-- ============ BODY · SOUL · SPIRIT ============ -->
-<section class="dims section-pad">
-  <div class="wrap">
-    <div class="head reveal">
-      <h2>Cover all of them. All of it.</h2>
+<main>
+<div class="hero">
+  <div class="hero-words">
+    <h1>Pray. Speak. Declare. <span class="otl">Over Their Lives</span></h1>
+    <p class="what">Over Their Lives helps you pray intentionally and consistently over your children, their whole being: body, soul and spirit. It is for parents and other adults such as grandparents, godparents and guardians who pray for the children in their lives.</p>
+    <div class="hero-acts">
+      <button class="btn" type="button" id="pray-now" data-pray hidden>Pray now</button>
+      <a class="btn quiet" href="#music"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="3" y="13.5" width="4.5" height="7" rx="2" fill="currentColor"/><rect x="16.5" y="13.5" width="4.5" height="7" rx="2" fill="currentColor"/></svg>Listen to the anthem</a>
     </div>
-    <div class="cards">
-      <div class="card card--body reveal">
-        <h3>Body</h3>
-        <p>Health, protection, sleep, growth. Prayers for the child you can hold.</p>
+  </div>
+  <div class="hero-phone">
+    <div class="phone-crop">
+      <div class="device">
+        <div class="scene" id="scene">
+          <div class="mark wreath" id="h-mark"><img src="/assets/mark.svg" alt="A child seated inside a wreath of leaves, the Over Their Lives mark"></div>
+          <p class="tag rise in" id="h-tag">PRAY · SPEAK · DECLARE</p>
+          <img class="wordmark rise in" id="h-word" src="/assets/wordmark.png" alt="">
+          <div class="slot">
+            <div class="soon" id="h-soon"><p>Coming soon</p></div>
+          </div>
+        </div>
       </div>
-      <div class="card card--soul reveal">
-        <h3>Soul</h3>
-        <p>Mind, emotions, friendships, courage. Prayers for who they're becoming.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Pray now, step by step -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="step-h" hidden>
+  <div class="sheet-in">
+    <div class="sheet-top">
+      <div class="dots" aria-hidden="true"><i id="dot-1" class="on"></i><i id="dot-2"></i></div>
+      <button class="x" type="button" id="sheet-close">Close</button>
+    </div>
+
+    <div class="step" id="step-1">
+      <h2 id="step-h">Who are you praying for?</h2>
+      <p class="lede">Their name will be written into the prayer.</p>
+      <div class="field">
+        <label for="child-name">Your child's name</label>
+        <input id="child-name" type="text" maxlength="30" placeholder="Their name" autocapitalize="words" autocomplete="off" spellcheck="false">
+        <p class="private">The name stays on this page. It is never sent to us.</p>
       </div>
-      <div class="card card--spirit reveal">
-        <h3>Spirit</h3>
-        <p>Faith, identity, purpose. Prayers that lead them to God.</p>
+      <div class="field">
+        <span class="lab" id="lab-g">You are praying for</span>
+        <div class="row" role="group" aria-labelledby="lab-g">
+          <button class="chip" type="button" id="g-female" data-g="female" aria-pressed="false">A daughter</button>
+          <button class="chip" type="button" id="g-male" data-g="male" aria-pressed="false">A son</button>
+        </div>
       </div>
+    </div>
+
+    <div class="step" id="step-2" hidden>
+      <h2>What would you like to pray?</h2>
+      <p class="lede" id="step-2-lede">Choose one to begin with.</p>
+      <div class="topics" id="topics" role="group" aria-label="Prayers"></div>
+    </div>
+
+    <div class="step-foot">
+      <button class="btn quiet" type="button" id="step-back" hidden>Back</button>
+      <button class="btn" type="button" id="step-next" disabled>Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- The prayer room -->
+<div class="room" id="room" role="dialog" aria-modal="true" aria-labelledby="p-title" style="background-image:url(/assets/rooms/secret-place.jpg)" hidden>
+  <div class="room-in">
+    <div class="room-top"><span>The Secret Place</span><button class="x" type="button" id="room-close">Leave</button></div>
+    <div class="music-row" role="group" aria-label="Music to pray with">
+      <span class="lab">Music</span>
+      <button class="tune" type="button" data-track="piano" id="tune-piano" aria-pressed="false">Piano</button>
+      <button class="tune" type="button" data-track="acoustic" id="tune-acoustic" aria-pressed="false">Acoustic</button>
+      <button class="tune" type="button" data-track="cello-strings" id="tune-cello" aria-pressed="false">Cello &amp; Strings</button>
+      <button class="tune" type="button" data-track="flute" id="tune-flute" aria-pressed="false">Flute</button>
+      <button class="tune" type="button" data-track="contemporary" id="tune-contemporary" aria-pressed="false">Contemporary</button>
+    </div>
+    <p class="src" id="p-src"></p>
+    <h2 id="p-title"></h2>
+    <p class="words" id="p-words"></p>
+    <div class="room-end">
+      <p id="p-after"></p>
+      <button class="btn amen" type="button" id="amen">Amen</button>
+    </div>
+  </div>
+  <audio id="player" loop preload="none"></audio>
+</div>
+
+<section class="wide" id="why">
+  <div class="why">
+    <div class="why-mark"><div class="why-stick"><div class="wreath ghost" id="why-wreath" data-fill="gold"><img src="/assets/mark.svg" alt=""></div></div></div>
+    <div>
+      <h2>What happens when we pray consistently for our children</h2>
+      <ol class="reasons" id="reasons">
+      <li><div class="mini wreath" data-fill="gold" aria-hidden="true"></div><div><p>Our spirits are quickened, and we discern what is happening in their lives</p><cite>Philippians 4:6-7</cite></div></li>
+      <li><div class="mini wreath" data-fill="gold" aria-hidden="true"></div><div><p>We receive God's blueprint for each season of their lives</p><cite>1 Corinthians 2:9-10</cite></div></li>
+      <li><div class="mini wreath" data-fill="gold" aria-hidden="true"></div><div><p>We receive strategic direction for their next step</p><cite>Isaiah 30:21</cite></div></li>
+      <li><div class="mini wreath" data-fill="gold" aria-hidden="true"></div><div><p>We contend against the spiritual forces that fight their destinies</p><cite>Ephesians 6:12</cite></div></li>
+      <li><div class="mini wreath" data-fill="gold" aria-hidden="true"></div><div><p>We call forth the help they will need in every season</p><cite>Acts 9:10-11</cite></div></li>
+      <li><div class="mini wreath" data-fill="gold" aria-hidden="true"></div><div><p>They are strengthened within for the glory ahead of them</p><cite>Ephesians 3:16</cite></div></li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- ============ FOUNDING FAMILIES (final ask) ============ -->
-<section class="founding section-pad" id="join">
-  <div class="wrap">
-    <h2 class="reveal">Countdown</h2>
-
-    <!-- Gentle countdown to Dec 25, 2026 -->
-    <div class="countdown reveal" data-countdown aria-label="Time until launch on December 25, 2026">
-      <div class="cd-unit"><div class="cd-num" data-days>—</div><div class="cd-label">Days</div></div>
-      <div class="cd-unit"><div class="cd-num" data-hours>—</div><div class="cd-label">Hours</div></div>
-      <div class="cd-unit"><div class="cd-num" data-mins>—</div><div class="cd-label">Minutes</div></div>
-      <div class="cd-unit"><div class="cd-num" data-secs>—</div><div class="cd-label">Seconds</div></div>
+<section class="wide" id="library">
+  <div class="lib">
+    <div class="lib-head">
+      <span class="eyebrow">Inside the app</span>
+      <h2>Explore our library of prayer themes</h2>
+      <p class="lede">Every prayer has its place on the shelf. Walk along spirit, soul and body, and take down the one today is asking for.</p>
+    </div>
+    <div class="lib-phone">
+      <div class="device film">
+        <video id="lib-film" src="/assets/screens/library.mp4" poster="/assets/screens/library.jpg" width="600" height="1300" muted playsinline loop preload="none" aria-label="The app's library: shelves of prayer themes for spirit, soul and body"></video>
+      </div>
+    </div>
+    <div class="lib-tail">
+      <button class="btn" type="button" data-pray hidden>Pray now</button>
+      <p class="soon-line">Coming soon to iPhone and Android</p>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
+<section class="col center" id="music">
+  <span class="eyebrow">Music</span>
+  <h2>The Over Their Lives anthem</h2>
+  <a class="anthem" href="https://www.youtube.com/watch?v=VAlxYkmvqX4" target="_blank" rel="noopener" aria-label="Watch Cover Them, God of Grace on YouTube">
+    <img src="/assets/anthem.jpg" width="1280" height="720" loading="lazy" alt="Cover Them, God of Grace: a baby's hand holding an adult's finger">
+    <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+  </a>
+  <p class="lab2">Listen on</p>
+  <div class="row mid">
+    <a class="svc" href="https://open.spotify.com/album/6XILZambaRVtXyQWE9tn6c" target="_blank" rel="noopener" aria-label="Listen on Spotify" title="Spotify" style="color:#1DB954"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+    <a class="svc" href="https://music.apple.com/us/album/cover-them-god-of-grace/6823025105?i=6823025106" target="_blank" rel="noopener" aria-label="Listen on Apple Music" title="Apple Music" style="color:#FA243C"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/></svg></a>
+    <a class="svc" href="https://music.youtube.com/playlist?list=OLAK5uy_n568XpVnjNhpLB8JaMfnWeDK0HvfOkK2Q" target="_blank" rel="noopener" aria-label="Listen on YouTube Music" title="YouTube Music" style="color:#FF0000"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/></svg></a>
+    <a class="svc" href="https://www.youtube.com/watch?v=TLfDm8TxuEI" target="_blank" rel="noopener" aria-label="Listen on YouTube" title="YouTube" style="color:#FF0000"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+  </div>
+</section>
+</main>
+
 <footer>
   <div class="wrap">
-    <img class="footer-mark" src="assets/mark-256.png" alt="Over Their Lives mark" />
+    <img class="footer-mark" src="/assets/mark-256.png" alt="Over Their Lives mark" />
     <div class="socials">
-      <!-- [NANA DECIDES: exact profile URLs] -->
       <a href="https://www.facebook.com/overtheirlives" aria-label="Over Their Lives on Facebook" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
       </a>
@@ -474,6 +213,10 @@
       <p class="foot-address">971 US Highway 202N, STE N, Branchburg, NJ 08876</p>
       <p class="foot-links">
         <a href="mailto:support@overtheirlives.com">support@overtheirlives.com</a>
+        <span class="foot-dot" aria-hidden="true">·</span>
+<a href="/about">About</a>
+        <span class="foot-dot" aria-hidden="true">·</span>
+        <a href="/how-it-works">How it works</a>
         <span class="foot-dot" aria-hidden="true">·</span>
         <a href="/support">Support</a>
         <span class="foot-dot" aria-hidden="true">·</span>
@@ -491,51 +234,6 @@
   </div>
 </footer>
 
-<script>
-  /* ---------- Reveal on scroll ---------- */
-  (function () {
-    var els = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) {
-      els.forEach(function (el) { el.classList.add('in'); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.14 });
-    els.forEach(function (el) { io.observe(el); });
-  })();
-
-  /* ---------- Countdown to Christmas Day 2026 ---------- */
-  (function () {
-    var box = document.querySelector('[data-countdown]');
-    if (!box) return;
-    // Launch: Dec 25, 2026, 00:00 local time.
-    var target = new Date(2026, 11, 25, 0, 0, 0).getTime();
-    var elD = box.querySelector('[data-days]');
-    var elH = box.querySelector('[data-hours]');
-    var elM = box.querySelector('[data-mins]');
-    var elS = box.querySelector('[data-secs]');
-
-    function pad(n) { return (n < 10 ? '0' : '') + n; }
-
-    function tick() {
-      var diff = target - Date.now();
-      if (diff <= 0) {
-        elD.textContent = elH.textContent = elM.textContent = elS.textContent = '00';
-        box.setAttribute('aria-label', 'Over Their Lives has launched.');
-        return;
-      }
-      var s = Math.floor(diff / 1000);
-      elD.textContent = Math.floor(s / 86400);
-      elH.textContent = pad(Math.floor((s % 86400) / 3600));
-      elM.textContent = pad(Math.floor((s % 3600) / 60));
-      elS.textContent = pad(s % 60);
-    }
-    tick();
-    setInterval(tick, 1000);
-  })();
-</script>
+<script src="/assets/home.js" defer></script>
 </body>
 </html>

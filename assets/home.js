@@ -1,0 +1,167 @@
+/* Homepage: the welcome animation on the phone, and Pray now. The prayers are fixed text
+   kept in this file; the name a visitor types never leaves their browser. */
+/* ---------- The mark, drawn from its own shapes so each leaf can arrive on its own ---------- */
+var OTL_MARK = {"leaves":["M698.35,148.04C695.48,151.96 692.38,155.70 689.28,159.44C685.18,164.37 681.00,169.24 676.74,174.04C648.57,205.72 613.65,238.24 567.77,232.34C558.13,231.09 548.74,228.28 539.84,224.41C528.45,219.45 517.57,212.82 508.18,204.66C505.95,202.72 499.64,196.88 498.86,194.25C498.53,193.15 499.18,191.26 499.53,190.19C500.66,186.74 502.45,183.49 504.40,180.44C512.40,167.91 524.09,157.68 536.97,150.39C572.19,130.48 615.39,133.88 653.90,139.65C662.81,140.99 671.70,142.51 680.56,144.20C686.52,145.33 692.51,146.43 698.35,148.04Z","M855.36,289.98C850.92,291.93 846.36,293.63 841.81,295.31C835.79,297.53 829.74,299.66 823.65,301.68C783.41,315.03 736.91,325.75 700.13,297.69C692.41,291.80 685.68,284.66 679.90,276.86C672.52,266.87 666.41,255.68 662.36,243.92C661.40,241.14 658.86,232.91 659.50,230.25C659.76,229.13 661.27,227.82 662.11,227.07C664.81,224.65 667.98,222.73 671.20,221.06C684.39,214.21 699.64,211.19 714.43,211.32C754.89,211.68 790.60,236.23 821.06,260.48C828.12,266.10 835.05,271.87 841.88,277.75C846.47,281.71 851.11,285.66 855.36,289.98Z","M920.37,491.41C915.55,490.87 910.75,490.07 905.97,489.24C899.65,488.16 893.34,486.98 887.05,485.68C845.53,477.13 799.91,463.15 782.08,420.47C778.34,411.50 776.08,401.96 774.98,392.31C773.58,379.97 773.88,367.23 776.26,355.02C776.82,352.13 778.73,343.73 780.61,341.75C781.40,340.91 783.36,340.53 784.46,340.30C788.02,339.55 791.72,339.48 795.34,339.64C810.19,340.30 824.90,345.31 837.65,352.82C872.50,373.36 891.16,412.47 905.41,448.71C908.71,457.10 911.84,465.56 914.81,474.08C916.80,479.80 918.84,485.54 920.37,491.41Z","M875.96,698.35C872.04,695.48 868.30,692.38 864.56,689.28C859.63,685.18 854.76,681.00 849.96,676.74C818.28,648.57 785.76,613.65 791.66,567.77C792.91,558.13 795.72,548.74 799.59,539.84C804.55,528.45 811.18,517.57 819.34,508.18C821.28,505.95 827.12,499.64 829.75,498.86C830.85,498.53 832.74,499.18 833.81,499.53C837.26,500.66 840.51,502.45 843.56,504.40C856.09,512.40 866.32,524.09 873.61,536.97C893.52,572.19 890.12,615.39 884.35,653.90C883.01,662.81 881.49,671.70 879.80,680.56C878.67,686.52 877.57,692.51 875.96,698.35Z","M734.02,855.36C732.07,850.92 730.37,846.36 728.69,841.81C726.47,835.79 724.34,829.74 722.32,823.65C708.97,783.41 698.25,736.91 726.31,700.13C732.20,692.41 739.34,685.68 747.14,679.90C757.13,672.52 768.32,666.41 780.08,662.36C782.86,661.40 791.09,658.86 793.75,659.50C794.87,659.76 796.18,661.27 796.93,662.11C799.35,664.81 801.27,667.98 802.94,671.20C809.79,684.39 812.81,699.64 812.68,714.43C812.32,754.89 787.77,790.60 763.52,821.06C757.90,828.12 752.13,835.05 746.25,841.88C742.29,846.47 738.34,851.11 734.02,855.36Z","M532.59,920.37C533.13,915.55 533.93,910.75 534.76,905.97C535.84,899.65 537.02,893.34 538.32,887.05C546.87,845.53 560.85,799.91 603.53,782.08C612.50,778.34 622.04,776.08 631.69,774.98C644.03,773.58 656.77,773.88 668.98,776.26C671.87,776.82 680.27,778.73 682.25,780.61C683.09,781.40 683.47,783.36 683.70,784.46C684.45,788.02 684.52,791.72 684.36,795.34C683.70,810.19 678.69,824.90 671.18,837.65C650.64,872.50 611.53,891.16 575.29,905.41C566.90,908.71 558.44,911.84 549.92,914.81C544.20,916.80 538.46,918.84 532.59,920.37Z","M325.65,875.96C328.52,872.04 331.62,868.30 334.72,864.56C338.82,859.63 343.00,854.76 347.26,849.96C375.43,818.28 410.35,785.76 456.23,791.66C465.87,792.91 475.26,795.72 484.16,799.59C495.55,804.55 506.43,811.18 515.82,819.34C518.05,821.28 524.36,827.12 525.14,829.75C525.47,830.85 524.82,832.74 524.47,833.81C523.34,837.26 521.55,840.51 519.60,843.56C511.60,856.09 499.91,866.32 487.03,873.61C451.81,893.52 408.61,890.12 370.10,884.35C361.19,883.01 352.30,881.49 343.44,879.80C337.48,878.67 331.49,877.57 325.65,875.96Z","M168.64,734.02C173.08,732.07 177.64,730.37 182.19,728.69C188.21,726.47 194.26,724.34 200.35,722.32C240.59,708.97 287.09,698.25 323.87,726.31C331.59,732.20 338.32,739.34 344.10,747.14C351.48,757.13 357.59,768.32 361.64,780.08C362.60,782.86 365.14,791.09 364.50,793.75C364.24,794.87 362.73,796.18 361.89,796.93C359.19,799.35 356.02,801.27 352.80,802.94C339.61,809.79 324.36,812.81 309.57,812.68C269.11,812.32 233.40,787.77 202.94,763.52C195.88,757.90 188.95,752.13 182.12,746.25C177.53,742.29 172.89,738.34 168.64,734.02Z","M103.63,532.59C108.45,533.13 113.25,533.93 118.03,534.76C124.35,535.84 130.66,537.02 136.95,538.32C178.47,546.87 224.09,560.85 241.92,603.53C245.66,612.50 247.92,622.04 249.02,631.69C250.42,644.03 250.12,656.77 247.74,668.98C247.18,671.87 245.27,680.27 243.39,682.25C242.60,683.09 240.64,683.47 239.54,683.70C235.98,684.45 232.28,684.52 228.66,684.36C213.81,683.70 199.10,678.69 186.35,671.18C151.50,650.64 132.84,611.53 118.59,575.29C115.29,566.90 112.16,558.44 109.19,549.92C107.20,544.20 105.16,538.46 103.63,532.59Z","M148.04,325.65C151.96,328.52 155.70,331.62 159.44,334.72C164.37,338.82 169.24,343.00 174.04,347.26C205.72,375.43 238.24,410.35 232.34,456.23C231.09,465.87 228.28,475.26 224.41,484.16C219.45,495.55 212.82,506.43 204.66,515.82C202.72,518.05 196.88,524.36 194.25,525.14C193.15,525.47 191.26,524.82 190.19,524.47C186.74,523.34 183.49,521.55 180.44,519.60C167.91,511.60 157.68,499.91 150.39,487.03C130.48,451.81 133.88,408.61 139.65,370.10C140.99,361.19 142.51,352.30 144.20,343.44C145.33,337.48 146.43,331.49 148.04,325.65Z","M289.98,168.64C291.93,173.08 293.63,177.64 295.31,182.19C297.53,188.21 299.66,194.26 301.68,200.35C315.03,240.59 325.75,287.09 297.69,323.87C291.80,331.59 284.66,338.32 276.86,344.10C266.87,351.48 255.68,357.59 243.92,361.64C241.14,362.60 232.91,365.14 230.25,364.50C229.13,364.24 227.82,362.73 227.07,361.89C224.65,359.19 222.73,356.02 221.06,352.80C214.21,339.61 211.19,324.36 211.32,309.57C211.68,269.11 236.23,233.40 260.48,202.94C266.10,195.88 271.87,188.95 277.75,182.12C281.71,177.53 285.66,172.89 289.98,168.64Z","M491.41,103.63C490.87,108.45 490.07,113.25 489.24,118.03C488.16,124.35 486.98,130.66 485.68,136.95C477.13,178.47 463.15,224.09 420.47,241.92C411.50,245.66 401.96,247.92 392.31,249.02C379.97,250.42 367.23,250.12 355.02,247.74C352.13,247.18 343.73,245.27 341.75,243.39C340.91,242.60 340.53,240.64 340.30,239.54C339.55,235.98 339.48,232.28 339.64,228.66C340.30,213.81 345.31,199.10 352.82,186.35C373.36,151.50 412.47,132.84 448.71,118.59C457.10,115.29 465.56,112.16 474.08,109.19C479.80,107.20 485.54,105.16 491.41,103.63Z"],"child":"M459.98,362.31C467.62,362.29 475.42,362.86 482.73,365.06C489.84,367.20 496.59,370.77 502.61,375.12C508.56,379.42 513.84,384.77 518.18,390.69C521.51,395.23 523.74,400.61 525.25,406.03C526.12,409.15 526.20,412.68 525.17,415.75C524.26,418.46 521.55,420.17 519.74,422.38C518.15,426.47 516.31,430.47 514.99,434.66C513.90,438.09 512.16,441.58 512.51,445.16C512.89,449.09 516.98,452.14 517.06,456.07C517.11,458.65 513.89,460.20 512.85,462.56C511.39,465.86 511.28,469.70 509.61,472.91C507.92,476.17 505.84,479.41 502.94,481.68C499.51,484.36 495.42,486.40 491.17,487.32C487.49,488.12 483.62,487.14 479.88,486.68C477.79,486.43 475.68,484.37 473.73,485.18C471.82,485.97 471.66,488.75 470.63,490.53C477.62,498.25 484.61,505.95 491.59,513.67C498.49,521.30 505.38,528.95 512.27,536.59C517.40,535.06 522.32,531.58 527.66,532.01C535.01,532.59 541.59,536.85 548.48,539.47C554.20,541.65 560.79,542.48 565.50,546.40C570.62,550.67 574.50,556.68 576.70,562.98C578.34,567.69 574.98,573.20 576.50,577.95C578.83,585.20 583.97,591.21 587.85,597.76C591.68,604.23 594.92,611.14 599.62,617.02C602.35,620.43 605.96,623.21 609.82,625.26C614.25,627.61 619.27,628.65 624.09,630.02C629.16,631.46 634.69,631.44 639.47,633.65C643.17,635.37 647.39,637.69 648.88,641.49C649.82,643.92 647.73,647.68 645.22,648.40C636.03,651.07 626.18,650.29 616.63,650.84C605.06,651.50 593.46,652.74 581.90,652.02C578.66,651.81 575.20,650.47 572.96,648.11C571.01,646.04 572.09,642.29 570.49,639.94C566.35,633.85 561.06,628.62 556.04,623.24C551.15,618.01 546.14,612.87 540.78,608.14C539.14,606.70 537.31,604.57 535.15,604.83C532.99,605.09 531.77,607.63 530.46,609.37C526.02,615.32 522.47,621.90 517.98,627.81C513.57,633.61 508.72,639.08 503.79,644.45C501.00,647.49 498.39,650.88 494.85,652.99C491.24,655.15 487.02,656.27 482.87,656.92C473.09,658.45 463.19,659.66 453.29,659.47C443.94,659.30 434.39,658.62 425.46,655.84C418.14,653.56 410.71,650.10 405.43,644.54C399.63,638.46 396.41,630.21 393.55,622.31C391.01,615.32 389.96,607.81 389.42,600.39C388.71,590.44 388.72,580.38 389.82,570.46C390.96,560.09 393.35,549.87 396.10,539.82C398.44,531.29 401.83,523.07 405.06,514.84C408.19,506.86 411.28,498.84 415.18,491.21C417.62,486.41 421.26,482.32 424.02,477.69C425.21,475.69 426.00,473.47 426.99,471.36C424.74,468.48 422.45,465.62 420.23,462.71C416.64,458.01 412.46,453.70 409.56,448.55C406.19,442.57 403.03,436.29 401.56,429.58C400.05,422.72 399.55,415.43 400.77,408.51C401.93,401.97 404.81,395.65 408.53,390.14C412.70,383.98 418.19,378.68 424.04,374.09C428.93,370.25 434.50,367.09 440.40,365.15C446.67,363.10 453.39,362.32 459.98,362.31ZM480.77,560.54C482.47,560.61 484.08,562.43 484.44,564.09C484.92,566.30 483.87,568.65 482.99,570.74C482.23,572.57 481.58,575.75 479.60,575.63C477.72,575.51 477.70,572.27 477.47,570.40C477.21,568.22 477.48,565.93 478.18,563.84C478.63,562.52 479.38,560.49 480.77,560.54Z"};
+function otlWreath(el) {
+  var NS = 'http://www.w3.org/2000/svg';
+  var svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 1024 1024'); svg.setAttribute('fill', 'url(#' + (el.getAttribute('data-fill') || 'plum') + ')'); svg.setAttribute('aria-hidden', 'true');
+  var leaves = OTL_MARK.leaves.map(function (d, i) {
+    var p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', 'lf');
+    p.style.transitionDelay = (i * 70) + 'ms'; svg.appendChild(p); return p;
+  });
+  var c = document.createElementNS(NS, 'path'); c.setAttribute('d', OTL_MARK.child); c.setAttribute('fill-rule', 'evenodd'); svg.appendChild(c);
+  el.textContent = ''; el.appendChild(svg);
+  return { show: function (n) { leaves.forEach(function (p, i) { p.classList.toggle('off', i >= n); }); } };
+}
+var OTL_STILL = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- The welcome, playing on the phone: the child, then the leaves gather clockwise ---------- */
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var scene = $('scene'), mark = $('h-mark'), tag = $('h-tag'), word = $('h-word'), soon = $('h-soon');
+  var w = otlWreath(mark); w.show(12);
+  if (OTL_STILL) return;  // stays on the resting frame
+  var timers = [];
+  function at(ms, fn) { timers.push(setTimeout(fn, ms)); }
+  function run() {
+    timers.forEach(clearTimeout); timers = [];
+    [tag, word].forEach(function (el) { el.classList.remove('in'); });
+    mark.classList.add('alone'); w.show(0);
+    soon.classList.add('hide');
+    scene.classList.remove('hide');
+    var T = 1400;                                   // the child rests alone
+    at(T, function () { w.show(12); });             // leaves, one after another
+    T += 12 * 70 + 500 + 300;
+    at(T, function () { mark.classList.remove('alone'); });   // the whole mark rises into place
+    at(T + 1000, function () { tag.classList.add('in'); });
+    at(T + 2400, function () { word.classList.add('in'); });
+    at(T + 4400, function () { soon.classList.remove('hide'); });
+    at(T + 10400, function () { scene.classList.add('hide'); });
+    at(T + 11600, run);
+  }
+  run();
+})();
+
+/* ---------- Why we pray: the wreath gathers round the child as each line is read ---------- */
+(function () {
+  var list = document.getElementById('reasons'); if (!list) return;
+  var items = [].slice.call(list.children);
+  var big = otlWreath(document.getElementById('why-wreath'));
+  var minis = items.map(function (li) { return otlWreath(li.querySelector('.mini')); });
+  if (OTL_STILL) return;
+  list.classList.add('js');
+  var queued = false;
+  function draw() {
+    queued = false;
+    var line = window.innerHeight * 0.66, n = 0;
+    items.forEach(function (li, i) {
+      var on = li.getBoundingClientRect().top < line;
+      li.classList.toggle('on', on); minis[i].show(on ? (i + 1) * 2 : 0);
+      if (on) n = i + 1;
+    });
+    big.show(n * 2);
+  }
+  function ask() { if (!queued) { queued = true; requestAnimationFrame(draw); } }
+  window.addEventListener('scroll', ask, { passive: true }); window.addEventListener('resize', ask);
+  draw();
+})();
+
+/* ---------- The library film plays while it is on screen ---------- */
+(function () {
+  var v = document.getElementById('lib-film'); if (!v) return;
+  if (OTL_STILL) { v.controls = true; return; }
+  if (!('IntersectionObserver' in window)) { v.play(); return; }
+  new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else v.pause(); });
+  }, { threshold: 0.35 }).observe(v);
+})();
+
+/* ---------- Pray now: two questions, then the prayer room ---------- */
+(function () {
+  var PRAYERS = [{"id": "cover-them", "label": "Cover Them, God of Grace", "ref": "The Over Their Lives anthem", "title": "Cover Them, God of Grace", "text": "Father, You knew [name] even before I ever held [him/her] in my arms.\nI come to You today because I love [name]\nmore than I know how to say,\nand I know You love [him/her] even more.\n\nThere is so much my human strength and ability cannot do.\nI cannot walk into every room with [him/her].\nI cannot see what is coming.\nI cannot keep [his/her] heart from every hurt.\nBut You can, so I come to You with Your Word.\n\nFor You said in Isaiah 55:11 that every Word You speak\nshall not return to You void.\nSo I am standing on what You have said, Father,\nand I declare these words and promises over [name].\n\nCover [name], O God of all Grace and Mercy.\nAs Your Word says in Psalm 91:4, You will cover [name] with Your feathers,\nand under Your wings [he/she] will take refuge.\nLet Your Covering be upon [him/her] in any and every place.\n\nKeep [his/her] body, Lord.\nIt is a temple of Your Holy Spirit,\nso let no sickness overcome [him/her].\nIsaiah 53:5 says that by Jesus' stripes we are healed,\nso Lord, heal what hurts in [name],\nand satisfy [him/her] with long life.\n\nI hold up Isaiah 54:17 and declare that\nno weapon that is formed against [name] shall prosper,\nand every tongue which rises against [him/her] in judgment\nis forever condemned, for this is [name]'s heritage.\n\nWhen fear knocks, I proclaim 2 Timothy 1:7, which says:\nYou have not given [name] a spirit of fear,\nbut of power, and of love, and of a sound mind.\nLet the peace of Philippians 4:7,\nthe peace that surpasses all understanding,\nguard [his/her] heart and [his/her] mind.\n\nWhen [his/her] mind won't quiet down,\nLord, keep [him/her] in Your Shalom Shalom, perfect peace.\nI declare from Isaiah 54:13 that [name] is taught by the Lord God of Heaven,\nand great is [his/her] peace.\n\nFather, according to Jeremiah 29:11, Your thoughts toward [name]\nare thoughts of peace, and not of evil,\nto give [him/her] hope and a future.\nI enforce this promise over [name].\nLord, finish the good work You have begun in [him/her].\n\nBe with [name] as [he/she] grows,\nthe way You were with Samuel in 1 Samuel 3:19,\nand let none of [his/her] words fall to the ground.\n\nAnd when [he/she] comes to the end of a long and fruitful life\nstill holding on to You,\nmay [he/she] be able to say with Paul in 2 Timothy 4:7,\n\"I have fought the good fight.\nI have finished the course.\nI have kept the faith.\"\n\nFather, on the days when the night is long and my faith is weak,\nhelp me hold on to these promises,\nfor You are not a man, that You should lie.\nWhat You have said, You will bring to pass.\n\n[name], the Lord bless you, and keep you.\nThe Lord make His face to shine on you, and be gracious to you.\nThe Lord lift up His countenance upon you, and give you peace.\nYou are blessed in your coming in and in your going out.\nYou are kept safe in the arms of your Father.\nYou are covered under His wings.\nYou are His, now and all your days.\n\nIn the mighty name of Jesus, Amen."}, {"id": "psalm-91", "label": "Covered and protected", "ref": "Psalm 91", "title": "God's Covering Over [name]", "text": "O Lord God, my Refuge and my Fortress,\nI come to You for [name] today,\nand I set [him/her] down in the safest place there is:\nthe secret place of the Most High,\nunder the shadow of the Almighty.\n\nFather, deliver [name] from the snare of the fowler\nand from the destroying plague,\nfrom every trap laid for [him/her], seen and unseen.\nCover [name] with Your feathers,\nand provide refuge for [him/her] under Your wings.\n\n[name], God's truth will be your shield,\nagainst every lie you hear, and every lie about who you are.\nYou will not be afraid of the terror by night,\nnor the arrow that flies by day.\nA thousand may fall at your side,\nten thousand at your right hand;\nbut it shall not come near you.\n\n[name], because you make the Most High your dwelling,\nno evil shall befall you,\nno plague shall come near your home.\nFor He shall give His angels charge over you,\nto keep you in all your ways:\nevery step, every stumble, every road I cannot walk beside you.\nIn their hands they will bear you up,\nso you will not so much as dash your foot against a stone.\n\nAnd this, [name], is what the Almighty has promised you:\nBecause you love Him, He will rescue you.\nGod will protect you, for you know His name.\nWhen you call on God, He will answer.\nHe will be with you in trouble.\nWith long life He will satisfy you, and show you His salvation.\n\nThank You, my Father, that You have heard me.\nThank You that Your angels are watching over [name] this very moment,\nthat Your wings are already covering [him/her],\nand that no weapon formed against [him/her] shall prosper.\n\nIn Jesus' Name, Amen."}, {"id": "psalm-23", "label": "Cared for and provided for", "ref": "Psalm 23", "title": "The Lord Is [name]'s Shepherd", "text": "The Lord is [name]'s Shepherd,\nand for this very reason,\n[he/she] shall never lack or want any good thing.\n\nGood Shepherd, make [name] to lie down in green pastures;\ngive [him/her] a life of more than enough,\nwhere [he/she] rests without striving,\nprovided for before [he/she] even asks.\nLead [him/her] beside the still waters;\nquiet [his/her] mind when it races,\ncalm [his/her] heart when the world grows loud.\nRestore [his/her] soul, Lord,\nwhen it is weary, when it is wounded,\nwhen the world takes more than it can give.\n\n[name], God Himself will lead you\nin the paths of righteousness for His name's sake,\nin every choice, every crossroad, every turn.\n\nYea, though you walk through the valley of the shadow of death,\nthrough loss, through fear,\nthrough the darkest season life may bring,\nyou will fear no evil, for He is with you.\nHis rod and His staff, they comfort you.\n[name], you will never walk any valley alone.\n\nHe prepares a table before you\nin the presence of your enemies.\nHe anoints your head with oil;\nyour cup runs over.\nSurely goodness and mercy shall follow you\nall the days of your life,\nbehind you, beside you, ahead of you, all around you,\nand you will dwell in the house of the Lord forever.\n\nI bless Your Name, Father, for You have heard me.\n\nIn Jesus' Name, Amen."}, {"id": "psalm-139", "label": "Wonderfully made and fully known", "ref": "Psalm 139", "title": "Wonderfully Made and Fully Known", "text": "O Lord, You have searched [name] and known [him/her].\nBefore I ever knew [name], You did.\nYou formed [his/her] inward parts;\nYou covered [him/her] in the womb.\nYou know [his/her] sitting down and [his/her] rising up;\nYou understand [his/her] thoughts afar off.\n\nFather of Heaven, keep [name] ever aware of Your presence,\nthat You go before [him/her] and behind [him/her],\nand lay Your hand upon [him/her].\n\n[name], you are fearfully and wonderfully made.\nMarvelous are the works of God,\nand you are one of them.\nNothing about you is an accident;\nnothing about you is a mistake.\n\nWhere can you go from His Spirit?\nIf you ascend up into heaven, He is there.\nIf you make your bed in the depths, behold, He is there.\nIf you take the wings of the morning\nand dwell in the uttermost parts of the sea,\neven there His hand shall lead you,\nand His right hand shall hold you,\nin every high place, every low place,\nevery far place I cannot reach.\n\n[name], no darkness can hide you from your God;\nthe night shall shine about you as the day.\nHis thoughts toward you are precious,\nmore in number than the sand;\nand when you wake, He is still with you.\n\nThank You, my Lord and my God, that You have heard me.\nThank You that [name] is fearfully and wonderfully made,\nthat [he/she] is Your marvelous work.\nThank You that You know [name] completely and love [him/her] fully,\nand that You are always with [him/her].\n\nIn Jesus' Name, Amen."}, {"id": "be-thou-my-vision", "label": "God’s light on [his/her] path", "ref": "Be Thou My Vision, a hymn", "title": "Seeing Life Through God's Eyes", "text": "O Lord of [name]'s heart, be [his/her] vision.\nLet nothing be all else to [him/her], save that You are.\nBe [his/her] best thought, by day and by night,\nwaking or sleeping, Your presence [his/her] light.\n\nFather, be [name]'s wisdom and [his/her] true word.\nWhen many voices call for [his/her] attention,\nlet Yours be the one [he/she] knows and follows.\nWhen [he/she] must decide, choose, or answer,\ngive [him/her] a wisdom beyond [his/her] years.\n\n[name], God is your great Father, and you are His true child.\nHe dwells in you, and you are one with Him.\nHe is your battle shield and your sword for the fight,\nyour dignity and your delight:\nyou will never have to earn your worth;\nit was settled the day He called you His.\n\nHe is your soul's shelter, your high tower.\nHe will raise you heavenward, the power of your power,\nstrength for every weakness, courage for every fear.\n\n[name], you will not chase riches,\nnor live for the empty praise of others:\nnot likes, not applause, not the approval of the crowd.\nThe Lord is your inheritance, now and always.\nHe, and He only, first in your heart,\nthe High King of Heaven, your treasure.\n\nHeart of [name]'s own heart, whatever befall,\nstill be [his/her] vision, O Ruler of all.\n\nI worship You, Father, for You have heard me.\n\nIn Jesus' Name, Amen."}, {"id": "o-love", "label": "A love that never lets go", "ref": "O Love That Wilt Not Let Me Go, a hymn", "title": "A Love That Will Never Let Go", "text": "O God of everlasting love,\nYou have loved [name] with an everlasting love,\nand with lovingkindness You have drawn [him/her] to Yourself.\nYour love will not let [him/her] go.\n\nWhen [name] is weary, let [his/her] tired soul rest in You.\nWhen [he/she] has given all [he/she] has and still feels empty,\nfill [him/her] again from the depths of Your love.\n\nBe the light that follows [name] all [his/her] way.\nWhen [his/her] own light flickers, shine through.\nIn [his/her] darkest moments,\nbe the light [he/she] can still see.\n\nLord, when pain shows up in [name]'s life,\ndon't let any of it be wasted.\nSeek [him/her] in it. Find [him/her] in it.\nLet [him/her] see the rainbow through the rain,\nand hold fast to Your promise that morning is coming:\na morning when You will wipe away every tear.\n\nAnd if [name] ever doubts You, pulls away, or walks off,\nhold on tighter.\nNo one can snatch [him/her] out of Your hand.\nNothing in all creation can separate [him/her] from Your love.\n\nYou have begun a good work in [name],\nand You will carry it on to completion.\n\nThank You, Father, that Your love has [name], and will never let go.\n\nIn Jesus' Name, Amen."}, {"id": "school", "label": "Understanding what [he/she] learns", "ref": "School", "title": "Understanding & Comprehension", "text": "Father of glory, real concepts are arriving for [name] now, ideas that build on each other and ask for actual thinking. Let [him/her] truly understand rather than memorize words to repeat back. Let concepts land deep enough that [name] can explain them in [his/her] own words. Send patient help for the times something refuses to click.\n\n[name] asks You for wisdom, and it is given liberally. A spirit of wisdom and revelation rests on [him/her]. You give [name] wisdom, knowledge, and understanding out of Your own mouth.\n\nI love watching it land, Father. I thank You for wisdom given to [name] without reproach, for every moment understanding has clicked, and for real comprehension deepening season by season. In Jesus' name, Amen."}, {"id": "friends", "label": "Making new friends", "ref": "Friendship", "title": "Making New Friends", "text": "For Your power and Your tenderness I thank You, Heavenly Father — and today I hold [name] up to You. Give [him/her] boldness to take the first step and the words to begin. Don't let shyness or the fear of rejection bind [name] up. I ask You to bring the right friendships across [his/her] path in Your timing.\n\nYou bind kindness and truth to [name], and [he/she] finds favor with God and people. You knit friend to friend, soul to soul, and You are knitting [name] to good ones. You open doors of friendship for [name] that no one can shut.\n\nSo I praise You, Father, who give [name] favor in the eyes of everyone [he/she] meets. I thank You for the boldness rising in [him/her] to step toward others, and I trust You for bringing the right friendships across [name]'s path. In Jesus' name, Amen."}];
+  var PRON = {
+    male:   { 'his/her': 'his', 'he/she': 'he', 'him/her': 'him' },
+    female: { 'his/her': 'her', 'he/she': 'she', 'him/her': 'her' }
+  };
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { name: '', gender: null, id: null, step: 1 };
+  var sheet = $('sheet'), room = $('room'), next = $('step-next'), back = $('step-back'), player = $('player'), opener = null;
+
+  function fill(text) { return text.replace(/\[(his\/her|he\/she|him\/her)\]/g, function (_, k) { return PRON[state.gender][k]; }); }
+  function drawTopics() {
+    var box = $('topics'); box.textContent = '';
+    PRAYERS.forEach(function (p) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'chip'; b.id = 'topic-' + p.id;
+      b.setAttribute('aria-pressed', String(p.id === state.id));
+      b.appendChild(document.createTextNode(fill(p.label)));
+      var s = document.createElement('small'); s.textContent = p.ref; b.appendChild(s);
+      b.addEventListener('click', function () { state.id = p.id; drawTopics(); sync(); });
+      box.appendChild(b);
+    });
+  }
+  function sync() {
+    $('step-1').hidden = state.step !== 1; $('step-2').hidden = state.step !== 2;
+    $('dot-2').className = state.step === 2 ? 'on' : '';
+    back.hidden = state.step === 1;
+    next.textContent = state.step === 1 ? 'Continue' : 'Begin';
+    next.disabled = state.step === 1 ? !(state.name && state.gender) : !state.id;
+    if (state.step === 2) $('step-2-lede').textContent = 'Choose one to begin with. It will be written for ' + state.name + '.';
+  }
+  function openSheet() { state.step = 1; sheet.hidden = false; document.body.style.overflow = 'hidden'; sync(); $('child-name').focus(); }
+  function closeAll() { sheet.hidden = true; room.hidden = true; document.body.style.overflow = ''; stopMusic(); if (opener) opener.focus(); }
+  function enterRoom() {
+    var p = PRAYERS.filter(function (x) { return x.id === state.id; })[0];
+    $('p-src').textContent = p.ref; $('p-title').textContent = fill(p.title).replace(/\[name\]/gi, state.name);
+    var words = $('p-words'); words.textContent = '';
+    p.text.split(/(\[[^\]]+\])/).forEach(function (part) {
+      var m = part.match(/^\[(.+)\]$/);
+      if (!m) { words.appendChild(document.createTextNode(part)); return; }
+      if (m[1].toLowerCase() === 'name') {
+        var s = document.createElement('span'); s.className = 'nm'; s.textContent = state.name; words.appendChild(s);
+      } else { words.appendChild(document.createTextNode(PRON[state.gender][m[1]] || part)); }
+    });
+    $('p-after').textContent = 'In the app, a prayer like this is ready for ' + state.name + ' every day, written for the age ' + PRON[state.gender]['he/she'] + ' is now.';
+    sheet.hidden = true; room.hidden = false; room.scrollTop = 0; $('room-close').focus();
+  }
+  function stopMusic() {
+    player.pause();
+    [].forEach.call(document.querySelectorAll('.tune'), function (b) { b.setAttribute('aria-pressed', 'false'); });
+  }
+
+  [].forEach.call(document.querySelectorAll('[data-pray]'), function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () { opener = b; openSheet(); });
+  });
+  $('sheet-close').addEventListener('click', closeAll);
+  $('room-close').addEventListener('click', closeAll);
+  $('amen').addEventListener('click', closeAll);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !(sheet.hidden && room.hidden)) closeAll(); });
+  $('child-name').addEventListener('input', function (e) { state.name = e.target.value.trim(); sync(); });
+  $('child-name').addEventListener('keydown', function (e) { if (e.key === 'Enter' && !next.disabled) next.click(); });
+  [].forEach.call(document.querySelectorAll('[data-g]'), function (b) {
+    b.addEventListener('click', function () {
+      state.gender = b.getAttribute('data-g');
+      [].forEach.call(document.querySelectorAll('[data-g]'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      sync();
+    });
+  });
+  back.addEventListener('click', function () { state.step = 1; sync(); });
+  next.addEventListener('click', function () {
+    if (state.step === 1) { state.step = 2; drawTopics(); sync(); sheet.scrollTop = 0; }
+    else enterRoom();
+  });
+  [].forEach.call(document.querySelectorAll('.tune'), function (b) {
+    b.addEventListener('click', function () {
+      var was = b.getAttribute('aria-pressed') === 'true';
+      stopMusic();
+      if (was) return;
+      player.src = '/assets/audio/' + b.getAttribute('data-track') + '.mp3';
+      player.volume = 0.45;
+      var p = player.play();
+      if (p && p.catch) p.catch(function () {});
+      b.setAttribute('aria-pressed', 'true');
+    });
+  });
+})();
